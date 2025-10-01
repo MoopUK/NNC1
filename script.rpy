@@ -1,28 +1,64 @@
-﻿# The script of the game goes in this file.
+# Game by: Moop Open-source Games
+# Nairda Nun: Chapter 1 (*The Halloween Episode* - For LGBTQ+ Horror Jam 2025)
+
+# Game summary: Nairda Nun, the private detective.
+# Based in the 90's, general crime type genre, all characters are animal-based,
+# proportions and style similar to Sylvanian Families.
+
+# -----------------------------------------------------------------------------
+# Game Contents:
+
+# SCENE 00 - Introduction
+# 1. Previously on Nairda Nun:
+# - Murder and Giant Opal stolen from the Museum of Frogs and Fancies.
+# - It was the care takers, using a mace, due to bullet proof glass, etc.
+
+# 2. Discuss the silly world lore again:
+# - Such as hills being a crime zone as old laws say you can't
+# arrest people standing on hills.
+# - How only criminals wear shoes/footware because it conceals their
+# foot prints and thus their species.
+
+## Game Story draft / thoughts
+# Wanting a story where there is horror dream world alongside real life
+# 
+
+
+# SCENE 01 - Nairda Nun normal day
+# 1. Nun having a normal day of work,
+# 2.
+
+# SCENE 02 -
+# 1.
+# 2.
+
+# SCENE 03 -
+# 1.
+# 2.
+# 3...
+
+# Scene XX - Ending/s
+# 1. Win/Lose ending scene
+# Game End.
+
+# -----------------------------------------------------------------------------
 
 # Movie / Cutscenes (where needed)
-image example movie = Movie(play="examplemovie2.webm")
+image example movie = Movie(play="examplemovie2.webm") # Placeholder of my cat
 init:
     image movie = Movie(size=(1280, 720), xalign=0.5, yalign=0.5)
 
-# The game starts here.
+# The game starts here
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
+    # Background image/s
     scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
+    # Character sprites (name, expression)
     show nun happy
 
-    # These display lines of dialogue.
-
+    # These display lines of dialogue (name "dialogue")
     nun "You've created a new Ren'Py game."
+
     show example movie
 
     nun "Once you add a story, pictures, and music, you can release it to the world!"
