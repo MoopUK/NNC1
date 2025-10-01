@@ -31,7 +31,7 @@ label start:
 
     nun "no loop film but it'll skip text in background whiles we are watching this"
 
-    play movie "movies/examplemovie2.webm" noloop
+    play movie "examplemovie2.webm" noloop
 
     nun "moop again"
     nun "background text working"
