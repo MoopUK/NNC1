@@ -21,12 +21,19 @@
 
 ## Game Story draft / thoughts
 # Wanting a story where there is horror dream world alongside real life
-# 
+# going to a suspects house Nun is attacked and something happens to break
+# his fourth wall, realising he's a toy being controlled by a human.
+
+## To Do List / Needs
+# - Arm photo and edit, opaque, to use for showing a human is holding the characters
+# at random intervals.
+# - Audio of human in "real world" for different immersion / fourth wall
+# breaking.
 
 
 # SCENE 01 - Nairda Nun normal day
-# 1. Nun having a normal day of work,
-# 2.
+# 1. Nun having a normal day of work
+# 2. An attack that'll cause the start of fourth wall breaking
 
 # SCENE 02 -
 # 1.
@@ -51,7 +58,13 @@ init:
 # The game starts here
 label start:
     # Background image/s
-    scene bg room
+    scene screenstart
+    "Any similarities to real events are purely coincidental."
+    "No real animals were dressed in tiny suits and forced to solve crimes in the making of this videogame."
+    # PHOTO OF THE MODELS IN A CRIME SCENE SETTING
+    scene screenstart1
+    "Only fake ones."
+    scene apartmenthalls
 
     # Character sprites (name, expression)
     show nun happy
