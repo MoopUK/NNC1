@@ -79,9 +79,29 @@ label start:
 
 # SCENE: Lore
 label Lore:
-    scene library
-    show nun happy at left
-    nun "What was the glass was broken with?"
+    scene apartmenthalls
+    show tony n
+    t "Am I on?"
+    t "Welcome to..."
+    t "Lore!"
+    t "In our world, you don't wear shoes. Shoes hide your footprints, and
+    only criminals would purposefully hide their footprints!"
+    t "Have you ever heard of someone running for the hills?"
+    t "Well it comes from an old law that has never been rectified!"
+    t "If you stand on a hill, you're above the law, and thus, you can not be
+    charged with any crime whiles on that hill."
+    t "Crazy I know!"
+    t "And lastly..."
+    play sound "audio/toiletnoise.mp3"
+    "(a toilet flushes above)"
+    scene apartmenthalls
+    show tony angry
+    t "Dammit Ezekiel! I'm trying to!"
+    t "I'm sorry everyone, I have to stop the water!"
+    scene apartmenthalls
+    "(Tony runs back into his apartment, you hear a broom hitting on the ceiling
+    and a faint 'Fuck you, Tony!' coming from above)"
+    GameDev "(I don't think he's coming back, let's just start the game...)"
     jump GameStart
 
 # SCENE: Game Start

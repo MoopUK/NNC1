@@ -108,7 +108,7 @@ image drk shy:
     "drkshy"
     zoom 0.5
 
-# Therapy Receptionist PLACEHOLDERS REPLACEMENTS NEEDED
+# Therapy Receptionist
 image rec n:
     "receptionistn"
     zoom 0.5
