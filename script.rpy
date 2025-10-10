@@ -9,15 +9,15 @@
 # Game Contents:
 
 # SCENE 00 - Introduction
-# 1. Previously on Nairda Nun:
-# - Murder and Giant Opal stolen from the Museum of Frogs and Fancies.
-# - It was the care takers, using a mace, due to bullet proof glass, etc.
-
-# 2. Discuss the silly world lore again:
+# 1. Discuss the silly world lore again:
 # - Such as hills being a crime zone as old laws say you can't
 # arrest people standing on hills.
 # - How only criminals wear shoes/footware because it conceals their
 # foot prints and thus their species.
+
+# 2. Previously on Nairda Nun:
+# - Murder and Giant Opal stolen from the Museum of Frogs and Fancies.
+# - It was the care takers, using a mace, due to bullet proof glass, etc.
 
 ## Game Story draft / thoughts
 # Wanting a story where there is horror dream world alongside real life
@@ -60,15 +60,35 @@ label start:
     # Background image/s
     scene screenstart
     "Any similarities to real events are purely coincidental."
+    # can't really put this bit as it's kind of the entire storyline for this horror game version?
     "No real animals were dressed in tiny suits and forced to solve crimes in the making of this videogame."
     # PHOTO OF THE MODELS IN A CRIME SCENE SETTING
     scene screenstart1
     "Only fake ones."
-    scene apartmenthalls
 
+    scene classroom
+
+# CRIME SCENE: First choice of investigation
+    "Would you like a quick refresher on the world lore?"
+    menu:
+        "Sure!":
+
+            jump Lore
+        "No thanks, let's just start the game":
+            jump GameStart
+
+# SCENE: Lore
+label Lore:
+    scene library
+    show nun happy at left
+    nun "What was the glass was broken with?"
+    jump GameStart
+
+# SCENE: Game Start
+label GameStart:
+    scene apartmenthalls
     # Character sprites (name, expression)
     show nun happy
-
     # These display lines of dialogue (name "dialogue")
     nun "You've created a new Ren'Py game."
 
@@ -87,6 +107,13 @@ label start:
     nun "background text working2"
     nun "again background text working3"
 
+
+#ENDINGS: This checks if Nairda gets the good ending or the bad ending
+#    label which_end:
+#        if correct >= 3:
+#            jump good_end
+#        elif correct < 3:
+#            jump bad_end
 
     # This ends the game.
 

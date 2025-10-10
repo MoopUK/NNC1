@@ -6,6 +6,12 @@
 # Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
 default correct = 0
+# How to put yes or no answer into game:
+#            $ correct = correct +1  #GOOD choice!
+#            play sound "audio/yes.mp3"
+
+#            $ correct = correct -1  #BAD choice!
+#            play sound "audio/no.mp3"
 
 # Here you can give the info and colour of name tag for each character
 
