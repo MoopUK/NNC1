@@ -136,13 +136,13 @@ image tony sad:
     "tonysad"
     zoom 0.5
 image tony happy: #NEEDED
-    "tonyshy"
+    "tonyhappy"
     zoom 0.5
 image tony angry:
     "tonyangry"
     zoom 0.5
 image tony confused: #NEEDED
-    "tonyshy"
+    "tonyconfused"
     zoom 0.5
 image tony shy:
     "tonyshy"

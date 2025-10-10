@@ -6,6 +6,15 @@
 # proportions and style similar to Sylvanian Families.
 
 # -----------------------------------------------------------------------------
+## To Do List / Needs
+
+# - Arm photo and edit, opaque, to use for showing a human is holding the characters
+# at random intervals.
+# - Audio of human in "real world" for different immersion / fourth wall
+# breaking.
+
+# -----------------------------------------------------------------------------
+
 # Game Contents:
 
 # SCENE 00 - Introduction
@@ -24,16 +33,12 @@
 # going to a suspects house Nun is attacked and something happens to break
 # his fourth wall, realising he's a toy being controlled by a human.
 
-## To Do List / Needs
-# - Arm photo and edit, opaque, to use for showing a human is holding the characters
-# at random intervals.
-# - Audio of human in "real world" for different immersion / fourth wall
-# breaking.
-
-
 # SCENE 01 - Nairda Nun normal day
 # 1. Nun having a normal day of work
-# 2. An attack that'll cause the start of fourth wall breaking
+# 2. An attack that'll cause the start of fourth wall breaking. He insults
+# a Psychic, known as a "quack", but she's actually real. She curses Nun
+# with the ability to break the fourth wall/see reality (they're all toys),
+#
 
 # SCENE 02 -
 # 1.
@@ -51,7 +56,7 @@
 # -----------------------------------------------------------------------------
 
 # Movie / Cutscenes (where needed)
-image example movie = Movie(play="examplemovie2.webm") # Placeholder of my cat
+image officevideo1 movie = Movie(play="officevideo1.webm") # Placeholder of my cat
 init:
     image movie = Movie(size=(1280, 720), xalign=0.5, yalign=0.5)
 
@@ -68,11 +73,10 @@ label start:
 
     scene classroom
 
-# CRIME SCENE: First choice of investigation
+# QUESTION: Do you want a lore refresher?
     "Would you like a quick refresher on the world lore?"
     menu:
         "Sure!":
-
             jump Lore
         "No thanks, let's just start the game":
             jump GameStart
@@ -81,17 +85,22 @@ label start:
 label Lore:
     scene apartmenthalls
     show tony n
-    t "Am I on?"
-    t "Welcome to..."
-    t "Lore!"
-    t "In our world, you don't wear shoes. Shoes hide your footprints, and
-    only criminals would purposefully hide their footprints!"
+    t "Am I on? Ok, just read the teleprompter? Ok!"
+    t "Welcome to... Lore?"
+    t "In our world, you don't wear shoes. Shoes hide your footprints, so nobody knows your species,
+    and only criminals would purposefully hide that!"
     t "Have you ever heard of someone running for the hills?"
     t "Well it comes from an old law that has never been rectified!"
     t "If you stand on a hill, you're above the law, and thus, you can not be
     charged with any crime whiles on that hill."
     t "Crazy I know!"
-    t "And lastly..."
+    scene apartmenthalls
+    show tony confused
+    t "I'm not sure why they need to know this? It's common knowledge isn't it?"
+    "(Tony see's the cameraman pointing to the teleprompter and mouthing to please just read from that)"
+    scene apartmenthalls
+    show tony n
+    t "Ah, ok! and last but not least you should never..."
     play sound "audio/toiletnoise.mp3"
     "(a toilet flushes above)"
     scene apartmenthalls
@@ -101,32 +110,25 @@ label Lore:
     scene apartmenthalls
     "(Tony runs back into his apartment, you hear a broom hitting on the ceiling
     and a faint 'Fuck you, Tony!' coming from above)"
-    GameDev "(I don't think he's coming back, let's just start the game...)"
+    "(*sigh* I don't think he's coming back, let's just start the game...)"
     jump GameStart
 
 # SCENE: Game Start
 label GameStart:
+    scene screenstart1
+    "(Previously on Nairda Nun:)"
+    "(There was a murder robbery at the Museum of Frogs and Fancies.)"
+    "(It was the care takers, killing a guard, using a mace to open the opal case,
+    and stealing it! Nairda solved the case and they were caught before they made a run for the hills...)"
     scene apartmentlongshot
-    # Character sprites (name, expression)
+    "(And now the story continues...)"
+
     show nun happy
-    # These display lines of dialogue (name "dialogue")
     nun "You've created a new Ren'Py game."
-
-    show example movie
-
-    nun "Once you add a story, pictures, and music, you can release it to the world!"
-    hide example
+    play movie "officevideo1.webm" noloop
+    nun "........"
     nun "moop moop"
-
-    nun "no loop film but it'll skip text in background whiles we are watching this"
-
-    play movie "examplemovie2.webm" noloop
-
     nun "moop again"
-    nun "background text working"
-    nun "background text working2"
-    nun "again background text working3"
-
 
 #ENDINGS: This checks if Nairda gets the good ending or the bad ending
 #    label which_end:
