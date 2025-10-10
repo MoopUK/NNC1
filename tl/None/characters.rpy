@@ -16,7 +16,7 @@ default correct = 0
 # Here you can give the info and colour of name tag for each character
 
 # Narrator / The Game Developer (fourth-wall breaking character)
-define GameDev = Character("Narrator")
+define GameDev = Character("Game Dev")
 
 # Main Character, Nairda Nun
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green

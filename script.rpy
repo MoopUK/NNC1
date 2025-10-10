@@ -106,7 +106,7 @@ label Lore:
 
 # SCENE: Game Start
 label GameStart:
-    scene apartmenthalls
+    scene apartmentlongshot
     # Character sprites (name, expression)
     show nun happy
     # These display lines of dialogue (name "dialogue")
