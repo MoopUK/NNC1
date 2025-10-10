@@ -12,6 +12,8 @@
 # at random intervals.
 # - Audio of human in "real world" for different immersion / fourth wall
 # breaking.
+# Ezekiel photos (baby rabbit) needed for his character. Rabbits hate garlic so Tony using that as
+# revenge for water flowing noises might be good
 
 # -----------------------------------------------------------------------------
 
@@ -83,7 +85,7 @@ label start:
 
 # SCENE: Lore
 label Lore:
-    scene apartmenthalls
+    scene apartmentdoor
     show tony n
     t "Am I on? Ok, just read the teleprompter? Ok!"
     t "Welcome to... Lore?"
@@ -94,20 +96,20 @@ label Lore:
     t "If you stand on a hill, you're above the law, and thus, you can not be
     charged with any crime whiles on that hill."
     t "Crazy I know!"
-    scene apartmenthalls
+    scene apartmentdoor
     show tony confused
     t "I'm not sure why they need to know this? It's common knowledge isn't it?"
     "(Tony see's the cameraman pointing to the teleprompter and mouthing to please just read from that)"
-    scene apartmenthalls
+    scene apartmentdoor
     show tony n
     t "Ah, ok! and last but not least you should never..."
     play sound "audio/toiletnoise.mp3"
     "(a toilet flushes above)"
-    scene apartmenthalls
+    scene apartmentdoor
     show tony angry
     t "Dammit Ezekiel! I'm trying to!"
     t "I'm sorry everyone, I have to stop the water!"
-    scene apartmenthalls
+    scene apartmentdoor
     "(Tony runs back into his apartment, you hear a broom hitting on the ceiling
     and a faint 'Fuck you, Tony!' coming from above)"
     "(*sigh* I don't think he's coming back, let's just start the game...)"
@@ -115,8 +117,9 @@ label Lore:
 
 # SCENE: Game Start
 label GameStart:
-    scene screenstart1
+    scene apartmentdoor
     "(Previously on Nairda Nun:)"
+    scene screenstart1
     "(There was a murder robbery at the Museum of Frogs and Fancies.)"
     "(It was the care takers, killing a guard, using a mace to open the opal case,
     and stealing it! Nairda solved the case and they were caught before they made a run for the hills...)"
@@ -129,6 +132,10 @@ label GameStart:
     nun "........"
     nun "moop moop"
     nun "moop again"
+
+# Cursing Nun
+    ch "Hocus pocus diddly dee"
+    ch "You'll now see... the reality!"
 
 #ENDINGS: This checks if Nairda gets the good ending or the bad ending
 #    label which_end:
