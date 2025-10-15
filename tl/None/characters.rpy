@@ -6,17 +6,12 @@
 # Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
 default correct = 0
-# How to put yes or no answer into game:
-#            $ correct = correct +1  #GOOD choice!
-#            play sound "audio/yes.mp3"
-
-#            $ correct = correct -1  #BAD choice!
-#            play sound "audio/no.mp3"
 
 # Here you can give the info and colour of name tag for each character
 
 # Narrator / The Game Developer (fourth-wall breaking character)
 define GameDev = Character("Game Dev")
+define Hand = Character("Hand")
 
 # Main Character, Nairda Nun
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
@@ -48,6 +43,14 @@ define ch = Character("Chief", color="FFFFFF")
 # - confused
 # - embarrassed/shy
 
+# Hand (fourth wall breaker)
+image hand r:
+    "righthand1"
+    zoom 0.5
+image tester hand:
+    "testerhand"
+    zoom 0.5
+
 # Nun (Main Character)
 image nun n:
     "nunneutral"
@@ -66,6 +69,26 @@ image nun confused:
     zoom 0.5
 image nun shy:
     "nunshy"
+    zoom 0.5
+
+# Molly Stone (psychic)
+image molly n:
+    "placeholder"
+    zoom 0.5
+image molly sad:
+    "placeholder"
+    zoom 0.5
+image molly happy:
+    "placeholder"
+    zoom 0.5
+image molly angry:
+    "placeholder"
+    zoom 0.5
+image molly confused:
+    "placeholder"
+    zoom 0.5
+image molly shy:
+    "placeholder"
     zoom 0.5
 
 # Strudle Nun (Nairda's husband) PLACEHOLDERS REPLACEMENT NEEDED

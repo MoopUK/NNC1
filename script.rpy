@@ -30,25 +30,46 @@
 # - Murder and Giant Opal stolen from the Museum of Frogs and Fancies.
 # - It was the care takers, using a mace, due to bullet proof glass, etc.
 
-## Game Story draft / thoughts
-# Wanting a story where there is horror dream world alongside real life
-# going to a suspects house Nun is attacked and something happens to break
-# his fourth wall, realising he's a toy being controlled by a human.
+# SCENE 01 - Nairda Nun normal day of crime solving
+# 1. Nun having a normal day of work. Case of a missing wife, gone 72 hours, husband
+# is sad and wanting any information about his wife.
 
-# SCENE 01 - Nairda Nun normal day
-# 1. Nun having a normal day of work
-# 2. An attack that'll cause the start of fourth wall breaking. He insults
+# SCENE 02 - Molly Stone finds the wife / curses Nun
+# 1. Molly Stone wakes up at murder scene with the dead wife there
+
+# 2. Molly Stone doesn't like helping the police even if she knows where something is due
+# to being seen as a "quack" and also being arrested and convicted of some crimes, due
+# to knowing so much about the crime that only the perp would have known those details / etc.
+
+# 3. An attack that'll cause the start of fourth wall breaking. He insults
 # a Psychic, known as a "quack", but she's actually real. She curses Nun
-# with the ability to break the fourth wall/see reality (they're all toys),
-#
+# with the ability to break the fourth wall/see reality (they're all toys).
 
-# SCENE 02 -
+# 4. Molly Stone gets into her car to leave and adjusts her seat when she did, as if
+# she wasn't driving it the last time.
+
+# SCENE 04 - Funeral
+# 1. Wife funeral, Nun has to go wash his hands and finds the husband has been
+# throwing all of his wife's stuff into boxes to bin. When husband says Nun would understand
+# wanting to have a fresh start asap after tradjedy, Nun mentions when his partner died he never threw anything
+# out of theirs in the office.
+
+# 2. Nun keeps seeing a weird ghost-like arm every so often holding the other characters in place
+
+# 3.
+
+# SCENE 05 -
 # 1.
+
 # 2.
 
-# SCENE 03 -
+# 3...
+
+# SCENE 06 -
 # 1.
+
 # 2.
+
 # 3...
 
 # Scene XX - Ending/s
@@ -83,7 +104,7 @@ label start:
         "No thanks, let's just start the game":
             jump GameStart
 
-# SCENE: Lore
+# SCENE 00: Introduction (lore)
 label Lore:
     scene apartmentdoor
     show tony n
@@ -115,7 +136,7 @@ label Lore:
     "(*sigh* I don't think he's coming back, let's just start the game...)"
     jump GameStart
 
-# SCENE: Game Start
+# SCENE 00: Previously on Nairda Nun
 label GameStart:
     scene apartmentdoor
     "(Previously on Nairda Nun:)"
@@ -126,7 +147,13 @@ label GameStart:
     scene apartmentlongshot
     "(And now the story continues...)"
 
-    show nun happy
+# SCENE 01 - Nairda Nun normal day of crime solving
+# 1. Nun having a normal day of work. Case of a missing wife, gone 72 hours, husband
+# is sad and wanting any information about his wife.
+
+#    show nun happy
+#    show hand r
+    show tester hand
     nun "You've created a new Ren'Py game."
     play movie "officevideo1.webm" noloop
     nun "........"
