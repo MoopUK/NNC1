@@ -85,17 +85,13 @@ init:
 
 # The game starts here
 label start:
-    # Background image/s
+# Disclaimer screen
     scene screenstart
     "Any similarities to real events are purely coincidental."
-    # can't really put this bit as it's kind of the entire storyline for this horror game version?
     "No real animals were dressed in tiny suits and forced to solve crimes in the making of this videogame."
-    # PHOTO OF THE MODELS IN A CRIME SCENE SETTING
-    scene screenstart1
-    "Only fake ones."
 
+# SCENE 00: Introduction (world lore)
     scene classroom
-
 # QUESTION: Do you want a lore refresher?
     "Would you like a quick refresher on the world lore?"
     menu:
@@ -104,7 +100,6 @@ label start:
         "No thanks, let's just start the game":
             jump GameStart
 
-# SCENE 00: Introduction (lore)
 label Lore:
     scene apartmentdoor
     show tony n
@@ -150,15 +145,32 @@ label GameStart:
 # SCENE 01 - Nairda Nun normal day of crime solving
 # 1. Nun having a normal day of work. Case of a missing wife, gone 72 hours, husband
 # is sad and wanting any information about his wife.
+    scene apartmentdoor
+    "(Nairda Nun received a phone call about a missing person's case)"
+    "(A powerful man's wife hasn't been seen in the past 72 hours)"
+    "(Nairda has been called to attend a live news conference where the man will be asking for witnesses to come
+    forward)"
+    show nun n
+    nun "I'm on my way!"
+    scene apartmentdoor
+    "(Nairda's husband rushes out of the apartment from behind him)"
+    scene apartmentdoor
+    show snun angry at right
+    hubby "I know you haven't had a case in a while but that's not an excuse to forget me!"
+    scene apartmentdoor
+    show snun angry
+    hubby "I mean I am the one driving for croak's sake!"
 
-#    show nun happy
-#    show hand r
-    show tester hand
-    nun "You've created a new Ren'Py game."
+    scene stairs
+    "(They head off to the conference)"
+
+    scene messhall
+    "(A large group of reporters and police flock inside of a conference room listening to the husband's pleas)"
+    show nun n at right
+    nun "......."
+
     play movie "officevideo1.webm" noloop
-    nun "........"
-    nun "moop moop"
-    nun "moop again"
+    nun "moop"
 
 # Cursing Nun
     ch "Hocus pocus diddly dee"

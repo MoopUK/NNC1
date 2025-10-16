@@ -17,3 +17,7 @@
 
 #            $ correct = correct -1  #BAD choice!
 #            play sound "audio/no.mp3"
+
+# Hand testers
+#    show hand r
+#    show tester hand
