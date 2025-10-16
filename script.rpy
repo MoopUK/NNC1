@@ -125,6 +125,7 @@ label Lore:
     show tony angry
     t "Dammit Ezekiel! I'm trying to!"
     t "I'm sorry everyone, I have to stop the water!"
+    stop sound
     scene apartmentdoor
     "(Tony runs back into his apartment, you hear a broom hitting on the ceiling
     and a faint 'Fuck you, Tony!' coming from above)"
@@ -162,19 +163,27 @@ label GameStart:
     hubby "I mean I am the one driving for croak's sake!"
 
     scene stairs
-    "(They head off to the conference)"
+    "(Catching up to Nairda, they head off to the conference together)"
 
     scene messhall
-    "(A large group of reporters and police flock inside of a conference room listening to the husband's pleas)"
+    "(A large group of reporters and police have flocked inside of a conference room listening to the husband's pleas)"
+    "(Nairda and Strudle arrive right at the speech)"
+    show beaks n
+    beaks "And if you hear this..."
+    beaks "Don't give up!"
+    "(The reporters go wild, taking photos and shouting questions whiles Beaks leaves the stage)"
+    scene messhall
     show nun n at right
+    show snun n at left
     nun "......."
+    hubby "...."
 
     play movie "officevideo1.webm" noloop
     nun "moop"
 
 # Cursing Nun
-    ch "Hocus pocus diddly dee"
-    ch "You'll now see... the reality!"
+    molly "Hocus pocus diddly dee"
+    molly "You'll now see... the reality!"
 
 #ENDINGS: This checks if Nairda gets the good ending or the bad ending
 #    label which_end:

@@ -16,6 +16,10 @@ define Hand = Character("Hand")
 # Main Character, Nairda Nun
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
 
+# Main Characters, Beaks (man with missing wife)
+define beaks = Character("Beaks", color="FFFF00")
+define molly = Character("Molly Stone", color="FF69B4")
+
 # Husband of Nun - placeholder until physical character model received for editing
 define hubby = Character("Strudle", color="#FF0000")#Red
 
@@ -70,6 +74,25 @@ image nun confused:
 image nun shy:
     "nunshy"
     zoom 0.5
+# Beaks (man with missing wife)
+image beaks n:
+    "placeholder"
+    zoom 0.5
+image beaks sad:
+    "placeholder"
+    zoom 0.5
+image beaks happy:
+    "placeholder"
+    zoom 0.5
+image beaks angry:
+    "placeholder"
+    zoom 0.5
+image beaks confused:
+    "placeholder"
+    zoom 0.5
+image beaks shy:
+    "placeholder"
+    zoom 0.5
 
 # Molly Stone (psychic)
 image molly n:
@@ -91,7 +114,7 @@ image molly shy:
     "placeholder"
     zoom 0.5
 
-# Strudle Nun (Nairda's husband) PLACEHOLDERS REPLACEMENT NEEDED
+# Strudle Nun (Nairda's husband)
 image snun n:
     "snunneutral"
     zoom 0.2
@@ -111,7 +134,7 @@ image snun shy:
     "snunshy"
     zoom 0.2
 
-# Dr Krieger (Therapist) PLACEHOLDERS REPLACEMENT NEEDED
+# Dr Krieger (Therapist)
 image drk n:
     "drkn"
     zoom 0.5
@@ -158,13 +181,13 @@ image tony n:
 image tony sad:
     "tonysad"
     zoom 0.5
-image tony happy: #NEEDED
+image tony happy:
     "tonyhappy"
     zoom 0.5
 image tony angry:
     "tonyangry"
     zoom 0.5
-image tony confused: #NEEDED
+image tony confused:
     "tonyconfused"
     zoom 0.5
 image tony shy:
@@ -231,7 +254,7 @@ image chief shy:
     "placeholder"
     zoom 0.5
 
-# Harry Hare (arrogant police detective) PLACEHOLDER NEEDS REPLACING
+# Harry Hare (arrogant police detective)
 image hare n:
     "haren"
     zoom 0.5
