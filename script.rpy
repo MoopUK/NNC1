@@ -167,16 +167,77 @@ label GameStart:
 
     scene messhall
     "(A large group of reporters and police have flocked inside of a conference room listening to the husband's pleas)"
-    "(Nairda and Strudle arrive right at the speech)"
+    "(Nairda and Strudle arrive right at the end of the speech)"
     show beaks n
     beaks "And if you hear this..."
     beaks "Don't give up!"
     "(The reporters go wild, taking photos and shouting questions whiles Beaks leaves the stage)"
     scene messhall
+    show nun sad at right
+    show snun sad at left
+    nun "That poor man"
+    hubby "I know, I'd be besides myself if you ever went missing"
+    "(Nairda goes to Beaks to offer his condolenses)"
+    scene messhall
     show nun n at right
+    show beaks n at left
+    nun "Anything I can do, I'm available 24/7!"
+    beaks "Ah, you must be Nairda Nun. I've heard great things about you."
+    beaks "I'm sure you'll find my wife in no time at all"
+    scene messhall
+    show nun shy at right
+    show beaks n at left
+    nun "Thank you, sir."
+    show hare happy
+    d "Don't worry sir Beaks!"
+    "(Detective Harry Hair nudges Nairda back and takes over the scene)"
+    scene messhall
+    show beaks n at left
+    show hare happy at right
+    d "We've got everything covered! We're searching the whole town! I guarantee she'll be home by tomorrow!"
+
+    scene messhall
+    "(Nairda goes back to his husband)"
+    show nun sad at right
     show snun n at left
-    nun "......."
-    hubby "...."
+    nun "I'm not sure what his issue is with me..."
+    scene messhall
+    show nun sad at right
+    show snun angry at left
+    hubby "Ohhhhh if there weren't so many camaras I'd give him a clip on the ear!"
+    show nun happy at right
+    show snun happy at left
+    nun "You know just how to cheer me up"
+    hubby "..."
+    hubby "I could cheer you up more, how about we get fly pie for tea?"
+    scene messhall
+    show nun shy
+    show snun happy at left
+    nun "This is why I love you"
+    scene stairs
+    "(With the conference coming to a close, Nairda and Strudle grab a take away and head on home for the evening)"
+
+# SCENE 02 - Molly Stone finds the wife / curses Nun
+# 1. Molly Stone wakes up at murder scene with the dead wife there
+
+    # scene darkness
+    # Heavy rain noises
+    molly "Ouch, my head... What happened?"
+
+    # scene slightly lighter but still dark, maybe circle with dead body in the background faintly
+    # thunder sounds
+    molly "Am I outside?"
+
+    # More spooky noises
+    # More scene coming into focus?
+
+    molly "Why am I outside?"
+
+    # Dead body imminently visible
+    # spooky noises
+
+    "(A scream echoes out in the distance)"
+
 
     play movie "officevideo1.webm" noloop
     nun "moop"
