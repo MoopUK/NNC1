@@ -29,10 +29,17 @@
 # Thunderboom
 # https://freesound.org/people/michael_grinnell/sounds/512476/
 
-# Crowdnoise
+# Crowd
 # Attribution:
 # S Short approval - staggered alt.wav by Processaurus --
 # https://freesound.org/s/440082/ -- License: Attribution 4.0
+
+# Camera shutter
+# https://freesound.org/people/mrrap4food/sounds/619062/
+
+# Eeriewind
+# Attribution:
+# Ambiance-Eerie_Wind-001.wav by DWOBoyle -- https://freesound.org/s/147303/ -- License: Attribution 4.0
 
 # Scream1
 # Attribution:
@@ -41,3 +48,12 @@
 # scream2
 # Attribution:
 # Scream- woman- pain 2 by Valerie-Vivegnis -- https://freesound.org/s/767888/ -- License: Attribution 4.0
+
+# Sewer
+# Attribution:
+# Creepy Ambience 01: Empty Sewer by Xanco123 -- https://freesound.org/s/347302/ -- License: Attribution 4.0
+
+# Storm Rain
+# Attribution:
+# Storm Rain Pulsation Fantasy Sci-fi Alien Anotherworld Soundscape Ambiance Mixdown 1.wav by szegvari
+# https://freesound.org/s/532228/ -- License: Creative Commons 0

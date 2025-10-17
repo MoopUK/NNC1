@@ -32,21 +32,29 @@
 
 # SCENE 01 - Nairda Nun normal day of crime solving
 # 1. Nun having a normal day of work. Case of a missing wife, gone 72 hours, husband
-# is sad and wanting any information about his wife.
+# is sad and wanting any information about his wife. Does a press conference.
 
 # SCENE 02 - Molly Stone finds the wife / curses Nun
-# 1. Molly Stone wakes up at murder scene with the dead wife there
+# 1. Molly Stone wakes up at murder scene with the dead wife
+# 2. Police show up, Molly has been taken back to her institution, husband Beaks is coming to
+# confirm the body, Chief tells Nairda and Strudle to go to the institution to find out how
+# Molly Stone broke out and more about the case in general
 
-# 2. Molly Stone doesn't like helping the police even if she knows where something is due
-# to being seen as a "quack" and also being arrested and convicted of some crimes, due
+# SCENE 3 - Institution Questioning
+# 1. Nun and Strudle make way to the institution, discussing Molly Stone's general background as
+# a phychic. Strudle has to wait in the car whiles Nairda goes in.
+
+# 2. Molly Stone doesn't like helping the police, even if she knows where something is, due
+# to being institutionalised and seen as a "quack". She's also being arrested and convicted of some crimes, due
 # to knowing so much about the crime that only the perp would have known those details / etc.
 
-# 3. An attack that'll cause the start of fourth wall breaking. He insults
-# a Psychic, known as a "quack", but she's actually real. She curses Nun
-# with the ability to break the fourth wall/see reality (they're all toys).
+# 3. She pleas that she doesn't know how she escaped the institution, why she went to Beaks home, how she didn't
+# know where the Beaks Mansion was, but Nairda is not convinced and insults her "powers".
 
-# 4. Molly Stone gets into her car to leave and adjusts her seat when she did, as if
-# she wasn't driving it the last time.
+# 4. Cause of the start of the game fourth wall breaking. He insults Molly Stone, but she's actually real.
+# She curses Nun with the ability to break the fourth wall/see reality (aka: that they're all toys).
+
+# 5. Nairda can see a giant, faint hand holding Molly Stone up, he rubs his eyes and goes back to the car.
 
 # SCENE 04 - Funeral
 # 1. Wife funeral, Nun has to go wash his hands and finds the husband has been
@@ -79,7 +87,7 @@
 # -----------------------------------------------------------------------------
 
 # Movie / Cutscenes (where needed)
-image officevideo1 movie = Movie(play="officevideo1.webm") # Placeholder of my cat
+image officevideo1 movie = Movie(play="officevideo1.webm")
 init:
     image movie = Movie(size=(1280, 720), xalign=0.5, yalign=0.5)
 
@@ -130,7 +138,7 @@ label Lore:
     scene apartmentdoor
     "(Tony runs back into his apartment, you hear a broom hitting on the ceiling
     and a faint 'Fuck you, Tony!' coming from above)"
-    "(*sigh* I don't think he's coming back, let's just start the game...)"
+    GameDev "*sigh* I don't think he's coming back, let's just start the game..."
     jump GameStart
 
 # SCENE 00: Previously on Nairda Nun
@@ -167,16 +175,17 @@ label GameStart:
 
     scene stairs
     "(Catching up to Nairda, they head off to the conference together)"
-
     scene messhall
     "(A large group of reporters and police have flocked inside of a conference room listening to the husband's pleas)"
     "(Nairda and Strudle arrive right at the end of the speech)"
     show beaks n
     beaks "My wife"
     beaks "If you hear this..."
+    play sound "audio/crowd.mp3"
     beaks "Don't give up!"
-    # NOISE NEEDED crowds rabble rabble
+    play sound "audio/camerashutter.mp3"
     "(The reporters go wild, taking photos and shouting questions whiles Beaks leaves the stage)"
+    play sound "audio/crowd.mp3"
     scene messhall
     show nun sad at right
     show snun sad at left
@@ -186,6 +195,7 @@ label GameStart:
     scene messhall
     show nun n at right
     show beaks n at left
+    stop sound
     nun "Anything I can do, I'm available 24/7!"
     beaks "Ah, you must be Nairda Nun. I've heard great things about you."
     beaks "I'm sure you'll find my wife in no time at all"
@@ -259,7 +269,7 @@ label GameStart:
     molly "Who's...?"
 
     scene darkness4
-    molly "Mrs Beaks...?"
+    molly "Mrs Beaks...? From the news?"
 
     scene darkness5
     play sound "audio/thunderboom.mp3"
@@ -267,27 +277,40 @@ label GameStart:
     molly "MRS BEAKS!!?!!"
 
     scene morning3
-    play sound "audio/scream2.mp3"
     "(Molly's scream echoes out in the distance)"
 
 
 
-    scene morning3
+
+    scene morning4
+    stop music
+    "(A short while later)"
+    play music "audio/cafe.mp3"
+
     nun "I came here as fast as I could!"
     hubby "We heard Mrs Beaks had been found?"
-    chief "Her body was discovered by Molly Stone at 7.43am this morning"
-    "(Everyone looks around in confusion)"
+    chief "Her body was discovered at 7.43am this morning"
+    hubby "Her body? Oh no..."
+    nun "Who discovered the body?"
+    "(Tension can be felt in the air as everyone else turns to the Chief to answer)"
+    chief "Molly Stone"
+    nun "Molly Stone?"
     nun "I thought Molly Stone was in an institution?"
-    chief "So did we... It seems she broke out and come across the body a mere 400 metres from Beak Mansion"
-    chief "She claims she doesn't know how she got here, and was in histerics"
-    chief "The doctors from the institution came shortly after to pick her up"
+    chief "So did we... It seems she broke out and come across the body a mere 400 metres from the Beaks Mansion"
+    chief "She claims she doesn't know how she got here, and was in histerics upon finding the body"
+    chief "The only reason we know about it is due to some joggers hearing her screams from down the hillside"
+    chief "Once we figured out it was her, we called the institution and some doctors came by to pick her up"
     "(An uneasy feeling circles in the air)"
     hubby "You don't think that...?"
     chief "I'm not sure what to think yet, but I had to break the news to Mr Beaks about his wife"
-    chief "He said not to move the body until he got there"
+    chief "He said not to move the body until he got here"
     chief "Something about not believing it until he sees it for himself"
-
-
+    "(A commotion from above could be heard as Beaks toppled down the hillside to get to his wife)"
+    chief "I'll take it from here, you two go to the institution and see what you can find out"
+    "(The Chief of police composes himself)"
+    chief "sigh... Nobody should have to see their significant other this way"
+    "(The sound of the Chief shouting to Beaks can be heard in the distance)"
+    "(Whiles Nairda and Strudle head back to their car and make way to the institution)"
 
 
     play movie "officevideo1.webm" noloop

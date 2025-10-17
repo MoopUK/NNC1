@@ -1,13 +1,11 @@
-# Carbon copy of NNC0 characters.rpy, with edits/extras.
-# Using the same character models/images in every Nairda Nun game,
-# so it makes sense not to redraw them all for the second game/this one.
-
+# Characters premade from Chapter 00, and others added for this story
 # Script for all characters.
+
 # Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
 default correct = 0
 
-# Here you can give the info and colour of name tag for each character
+# Character List
 
 # Narrator / The Game Developer (fourth-wall breaking character)
 define GameDev = Character("Game Dev")
@@ -18,25 +16,30 @@ define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
 
 # Main Characters, Beaks (man with missing wife)
 define beaks = Character("Beaks", color="FFFF00")
+
+# Side Character, Beaks Ex-Mistress
+define olive = Character("Olivia", color="808000") # Olive colour
+
+# Main Characters, Molly Stone (Psychic)
 define molly = Character("Molly Stone", color="FF69B4")
 
-# Husband of Nun - placeholder until physical character model received for editing
-define hubby = Character("Strudle", color="#FF0000")#Red
+# Side Character, Institute nurse
+define nurse = Character("Institute Nurse", color="49535A") # Dark grey colour
 
-# Late Police Detective Partner of Nun
-define np = Character("Nun's Partner", color="#99C55E")
+# Main Character, Husband of Nun
+define hubby = Character("Strudle", color="#FF0000")#Red
 
 # Apartment neighbours
 define t = Character("Tony", color="#FF0000")#Red
 define e = Character("Ezekiel", color="#FFE4E1")#MistRose
 
 # Misc characters
-define a = Character("Alice", color="#33FFCC")#light blue # Museum Owner?
 define d = Character("Detective", color="#FFCC33")#yellow # Angry police detective
 define mor = Character("Mortician", color="#800000")#maroon # Mortician
-define r = Character("Receptionist", color="AABBCC")
-define drk = Character("Dr Krieger", color="FFCCAA")
-define chief = Character("Chief", color="FFFFFF")
+define r = Character("Receptionist", color="AABBCC") # Psychologist's receptionist and wife
+define drk = Character("Dr Krieger", color="FFCCAA") # Psychologist
+define chief = Character("Chief", color="135DD8") # Police blue, chief of police
+define np = Character("Nun's Partner", color="#99C55E") # Late Police Detective Partner of Nun
 
 # images for characters and facial expressions
 # General expressions:
@@ -46,6 +49,7 @@ define chief = Character("Chief", color="FFFFFF")
 # - angry
 # - confused
 # - embarrassed/shy
+# EXTRA: For fourth-wall breaking, some models will have hand variants
 
 # Hand (fourth wall breaker)
 image hand r:
