@@ -92,6 +92,7 @@ label start:
 
 # SCENE 00: Introduction (world lore)
     scene classroom
+    "Welcome to Chapter 01"
 # QUESTION: Do you want a lore refresher?
     "Would you like a quick refresher on the world lore?"
     menu:
@@ -135,7 +136,7 @@ label Lore:
 # SCENE 00: Previously on Nairda Nun
 label GameStart:
     scene apartmentdoor
-    "(Previously on Nairda Nun:)"
+    "(Previously on Nairda Nun Chapter 00:)"
     scene screenstart1
     "(There was a murder robbery at the Museum of Frogs and Fancies.)"
     "(It was the care takers, killing a guard, using a mace to open the opal case,
@@ -147,6 +148,8 @@ label GameStart:
 # 1. Nun having a normal day of work. Case of a missing wife, gone 72 hours, husband
 # is sad and wanting any information about his wife.
     scene apartmentdoor
+    #BGM
+    play music "audio/cafe.mp3"
     "(Nairda Nun received a phone call about a missing person's case)"
     "(A powerful man's wife hasn't been seen in the past 72 hours)"
     "(Nairda has been called to attend a live news conference where the man will be asking for witnesses to come
@@ -169,8 +172,10 @@ label GameStart:
     "(A large group of reporters and police have flocked inside of a conference room listening to the husband's pleas)"
     "(Nairda and Strudle arrive right at the end of the speech)"
     show beaks n
-    beaks "And if you hear this..."
+    beaks "My wife"
+    beaks "If you hear this..."
     beaks "Don't give up!"
+    # NOISE NEEDED crowds rabble rabble
     "(The reporters go wild, taking photos and shouting questions whiles Beaks leaves the stage)"
     scene messhall
     show nun sad at right
@@ -204,9 +209,9 @@ label GameStart:
     scene messhall
     show nun sad at right
     show snun angry at left
-    hubby "Ohhhhh if there weren't so many camaras I'd give him a clip on the ear!"
+    hubby "Ohhhhh if there weren't so many cameras I'd give him a clip on the ear!"
     show nun happy at right
-    show snun happy at left
+    show snun n at left
     nun "You know just how to cheer me up"
     hubby "..."
     hubby "I could cheer you up more, how about we get fly pie for tea?"
@@ -214,29 +219,75 @@ label GameStart:
     show nun shy
     show snun happy at left
     nun "This is why I love you"
+    scene messhall
+    show nun shy
+    show snun shy at left
+    "(With the conference coming to a close)"
     scene stairs
-    "(With the conference coming to a close, Nairda and Strudle grab a take away and head on home for the evening)"
+    "(Nairda and Strudle grab a take away and head on home for the evening)"
+
+    #ENG BGM "Cafe"
+    stop music
 
 # SCENE 02 - Molly Stone finds the wife / curses Nun
 # 1. Molly Stone wakes up at murder scene with the dead wife there
+    scene morning1
+    play music "audio/hailstorm.mp3"
+    "(Meanwhile... The next morning...)"
+    scene morning2
+    molly "Ouch, my head..."
 
-    # scene darkness
+    # thunder sound
+    play sound "audio/thunderboom.mp3"
+    scene darkness2
+    molly "What happened?"
     # Heavy rain noises
-    molly "Ouch, my head... What happened?"
 
+    scene darkness3
     # scene slightly lighter but still dark, maybe circle with dead body in the background faintly
     # thunder sounds
     molly "Am I outside?"
 
     # More spooky noises
     # More scene coming into focus?
-
-    molly "Why am I outside?"
+    scene darkness2
+    molly "How did I get outside?"
 
     # Dead body imminently visible
     # spooky noises
+    scene darkness1
+    molly "Who's...?"
 
-    "(A scream echoes out in the distance)"
+    scene darkness4
+    molly "Mrs Beaks...?"
+
+    scene darkness5
+    play sound "audio/thunderboom.mp3"
+    play sound "audio/scream1.mp3"
+    molly "MRS BEAKS!!?!!"
+
+    scene morning3
+    play sound "audio/scream2.mp3"
+    "(Molly's scream echoes out in the distance)"
+
+
+
+    scene morning3
+    nun "I came here as fast as I could!"
+    hubby "We heard Mrs Beaks had been found?"
+    chief "Her body was discovered by Molly Stone at 7.43am this morning"
+    "(Everyone looks around in confusion)"
+    nun "I thought Molly Stone was in an institution?"
+    chief "So did we... It seems she broke out and come across the body a mere 400 metres from Beak Mansion"
+    chief "She claims she doesn't know how she got here, and was in histerics"
+    chief "The doctors from the institution came shortly after to pick her up"
+    "(An uneasy feeling circles in the air)"
+    hubby "You don't think that...?"
+    chief "I'm not sure what to think yet, but I had to break the news to Mr Beaks about his wife"
+    chief "He said not to move the body until he got there"
+    chief "Something about not believing it until he sees it for himself"
+
+
 
 
     play movie "officevideo1.webm" noloop

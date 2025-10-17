@@ -21,3 +21,23 @@
 # Hand testers
 #    show hand r
 #    show tester hand
+
+# Sound references
+# hailstorm
+# https://freesound.org/people/Sadiquecat/sounds/730271/
+
+# Thunderboom
+# https://freesound.org/people/michael_grinnell/sounds/512476/
+
+# Crowdnoise
+# Attribution:
+# S Short approval - staggered alt.wav by Processaurus --
+# https://freesound.org/s/440082/ -- License: Attribution 4.0
+
+# Scream1
+# Attribution:
+# scream.wav by marionagm90 -- https://freesound.org/s/220653/ -- License: Attribution 3.0
+
+# scream2
+# Attribution:
+# Scream- woman- pain 2 by Valerie-Vivegnis -- https://freesound.org/s/767888/ -- License: Attribution 4.0

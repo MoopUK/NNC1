@@ -36,7 +36,7 @@ define d = Character("Detective", color="#FFCC33")#yellow # Angry police detecti
 define mor = Character("Mortician", color="#800000")#maroon # Mortician
 define r = Character("Receptionist", color="AABBCC")
 define drk = Character("Dr Krieger", color="FFCCAA")
-define ch = Character("Chief", color="FFFFFF")
+define chief = Character("Chief", color="FFFFFF")
 
 # images for characters and facial expressions
 # General expressions:
