@@ -3,13 +3,12 @@
 
 # Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
-default correct = 0
+default truth = 0
 
 # Character List
 
 # Narrator / The Game Developer (fourth-wall breaking character)
 define GameDev = Character("Game Dev")
-define Hand = Character("Hand")
 
 # Main Character, Nairda Nun
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
@@ -28,6 +27,9 @@ define nurse = Character("Institute Nurse", color="49535A") # Dark grey colour
 
 # Main Character, Husband of Nun
 define hubby = Character("Strudle", color="#FF0000")#Red
+
+# Sice Character, Fry the Pizza Guy
+define fry = Character("Fry", color="#DBA87F") #Pizza crust colour
 
 # Apartment neighbours
 define t = Character("Tony", color="#FF0000")#Red
@@ -278,24 +280,24 @@ image hare shy:
     "hareshy"
     zoom 0.5
 
-# Bruce (Nairda's nemesis at therapy) placeholder, might be entirely unneeded, might not show Bruce
-image bruce n:
-    "nunneutral"
+# Fry (Pizza guy)
+image fry n:
+    "fryn"
     zoom 0.5
-image bruce sad:
-    "nunsad"
+image fry sad:
+    "frysad"
     zoom 0.5
-image bruce happy:
-    "nunhappy"
+image fry happy:
+    "fryhappy"
     zoom 0.5
-image bruce angry:
-    "nunangry"
+image fry angry:
+    "fryangry"
     zoom 0.5
-image bruce confused:
-    "nunneutral"
+image fry confused:
+    "fryconfused"
     zoom 0.5
-image bruce shy:
-    "nunshy"
+image fry shy:
+    "fryshy"
     zoom 0.5
 
 # MISC ITEMS - All game scenes are in 1280 x 720, resize accordingly
@@ -318,6 +320,3 @@ image doorlock doorlock:
 image mace mace:
     "mace"
     zoom 0.6
-
-image body body:
-    "body"

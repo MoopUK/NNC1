@@ -54,26 +54,39 @@
 # 4. Cause of the start of the game fourth wall breaking. He insults Molly Stone, but she's actually real.
 # She curses Nun with the ability to break the fourth wall/see reality (aka: that they're all toys).
 
-# 5. Nairda can see a giant, faint hand holding Molly Stone up, he rubs his eyes and goes back to the car.
+# 5. Nairda can see a giant, faint hand holding Molly Stone up
 
-# SCENE 04 - Funeral
+# 6. His vision goes to black and he's suddenly back to the car.
+
+# 7. CHOICE - Truth (I blacked out? Don't remember) or Lie (I'm just tired, it's nothing)
+
+# SCENE 04 - Pizza Time
+# 1. Pizza time getting a pizza at pizza place
+# 2. Noticing the pizza place is a bit.... weird looking, almost plastic
+# 3. CHOICE? - mention it to husband or no?
+
+# SCENE 05 - Funeral
 # 1. Wife funeral, Nun has to go wash his hands and finds the husband has been
 # throwing all of his wife's stuff into boxes to bin. When husband says Nun would understand
 # wanting to have a fresh start asap after tradjedy, Nun mentions when his partner died he never threw anything
 # out of theirs in the office.
 
 # 2. Nun keeps seeing a weird ghost-like arm every so often holding the other characters in place
+# Choice - Mention it or no?
 
-# 3.
+# 3. The doorway to the house has unopened letters and a perfume smelling parcel that has a denied acceptance/delivery
+# label on it.
+# Nun thinks maybe husband had a mistress, noted the address and name
 
-# SCENE 05 -
-# 1.
 
-# 2.
+# SCENE 06 - Talking about the case
+# 1. Current evidence is only speculation about husband because he thrown the stuff away
 
-# 3...
+# 2. Possible Mistress? Has address and name noted down
 
-# SCENE 06 -
+# 3. He seemed more proactive about finding her than finding the murderer
+
+# SCENE 07 -
 # 1.
 
 # 2.
@@ -81,7 +94,13 @@
 # 3...
 
 # Scene XX - Ending/s
-# 1. Win/Lose ending scene
+# 1. Truth/Lie ending scene
+
+# Truth - You tell the truth and take meds to stop it
+
+# Lie - You lie and never get offered meds, and can see you're in a simulation type situation for the rest of
+# your life
+
 # Game End.
 
 # -----------------------------------------------------------------------------
@@ -235,6 +254,7 @@ label GameStart:
     "(With the conference coming to a close)"
     scene stairs
     "(Nairda and Strudle grab a take away and head on home for the evening)"
+    "(And enjoy fly pie for tea)"
 
     #ENG BGM "Cafe"
     stop music
@@ -280,13 +300,10 @@ label GameStart:
     "(Molly's scream echoes out in the distance)"
 
 
-
-
     scene morning4
     stop music
     "(A short while later)"
     play music "audio/cafe.mp3"
-
     nun "I came here as fast as I could!"
     hubby "We heard Mrs Beaks had been found?"
     chief "Her body was discovered at 7.43am this morning"
@@ -313,12 +330,251 @@ label GameStart:
     "(Whiles Nairda and Strudle head back to their car and make way to the institution)"
 
 
-    play movie "officevideo1.webm" noloop
-    nun "moop"
 
-# Cursing Nun
+# SCENE 3 - Institution Questioning
+# 1. Nun and Strudle make way to the institution, discussing Molly Stone's general background as
+# a phychic. Strudle has to wait in the car whiles Nairda goes in.
+    scene hospital
+    "(The institution: A small brown building, with gold patterns painted meticulously on the roof)"
+    "(If you didn't have claustrophobia before, you most certainly do now.)"
+    hubby "I think I best wait outside..."
+    nun "I'll try to be quick"
+    "(Nobody wants to be in the institution.)"
+    "(The inside feels like one long room wrapped in white fabric, shielding everyone from each other's gaze)"
+    "(The air isn't thick)"
+    "(It's just absent)"
+    "(Molly Stone is in the corner)"
+
+
+# 2. Molly Stone doesn't like helping the police, even if she knows where something is, due
+# to being institutionalised and seen as a "quack". She's also being arrested and convicted of some crimes, due
+# to knowing so much about the crime that only the perp would have known those details / etc.
+# 3. She pleas that she doesn't know how she escaped the institution, why she went to Beaks home, how she didn't
+# know where the Beaks Mansion was, but Nairda is not convinced and insults her "powers".
+
+    nun "Molly? I'm Nairda Nun, detective. I heard you found Mrs Beaks this morning?"
+    "(Molly takes in deep breathes, like a weight had been lifted from her upon being found in the institution)"
+    molly "Thank you for coming. I needed that."
+    show nun confused
+    nun "You needed... that?"
+    "(Her face is grave, if she says too much, an orderly might overhear)"
+    "(You don't want them to hear)"
+    nun "Can you tell me what happened? From start to finish?"
+    molly "I woke up and Mrs Beaks was in front of me, covered in blood, laying on the rocks at the bottom of the hillside"
+    nun "And before that?"
+    molly "Before that I was here."
+    nun "..."
+    nun "Are you saying you don't remember how you come to being near the Beaks Mansion?"
+    "(Molly seems upset)"
+    molly "I've never been there before, I didn't even see a damn mansion!"
+    molly "I woke up. Found Mrs Beaks. I started screaming. The police came..."
+    molly "... then an orderly came..."
+    molly "And now I'm back here..."
+    "(Nairda knows the institute is a stressful place, but it doesn't usually cause memory loss.)"
+    "(It also is inescapible. Unless you're allowed to leave, you know you aren't leaving it.)"
+    nun "How did you escape?"
+    "(Molly screams)"
+    play sound "audio/scream1.mp3"
+    molly "I DIDN'T ESCAPE!!!"
+    "(She's stifling for breath)"
+    molly "I didn't even see the hands!"
+    "(Molly holds her mouth shut)"
+    molly "I didn't..."
+    "(Hoping an Orderly did not hear that)"
+    molly "I was just... there..."
+    "(Nairda knows about these 'hands' she speaks of)"
+    "(Molly Stone is rather infamous for her stories. It's how she was placed into the institute in the first place)"
+    "(Giant, unidentified animal paws, apparently grabbing at the world)"
+    "(Moving it around like it's puppet)"
+    "(But it's stupid...)"
+    "(To even humour her is illogical)"
+    nun "You can't keep telling these lies, Molly"
+    nun "Faining psychic abilities to give anonymous tips to the police"
+    nun "Saying your friend gave you this 'power' before they were... what was it?"
+    nun "Thrown into the void? For being broken?"
+    nun "The only reason you're in here instead of a prison is because you're a danger to yourself..."
+    nun "And others."
+    "(Molly Stone is irritated. As is Nairda.)"
+    "(She takes a moment to compose herself)"
+    molly "I didn't say I was psychic. YOU all did!"
+    molly "The things I saw, I saw them from above"
+    molly "Everything was just happening with no way to stop it or even interact!"
+    molly "The murder robbery at the Museum of Frogs and Fancies!"
+    molly "I saw it happen but I wasn't there!"
+    "(Nairda has had enough)"
+    "(He tries to be understanding, he too struggles with his own mental health)"
+    "(But Molly has known too much information at several crime scenes)"
+    "(Especially for someone who 'was not there')"
+    "(Using the excuse some kind of god is causing all of this, or she could just see it from 'above')"
+    "(Feels too much like she's suffering from Delisions of Grandeur)"
+    nun "It was a waste of time coming here..."
+    "(He goes to knock on the wall to let the orderly know he's ready to leave)"
+
+# 4. Cause of the start of the game fourth wall breaking. He insults Molly Stone, but she's actually real.
+# She curses Nun with the ability to break the fourth wall/see reality (aka: that they're all toys).
+    molly "You know what!"
+    "(Nairda stops and turns around)"
+    molly "Do you want to know what it feels like?"
+    "(Nairda has never seen such conviction come from someone before)"
+    "(He almost believes she's innocent)"
+    molly "THIS! Is what it feels like!"
+    "(Darting to Nairda she holds on to his head and whispers into his ears)"
+# Curse
     molly "Hocus pocus diddly dee"
     molly "You'll now see... the reality!"
+
+# 5. Nairda can see a giant, faint hand holding Molly Stone up, he rubs his eyes and goes back to the car.
+    "(He jumps back in shock, and starts banging on the wall to leave)"
+    nun "Are you craz...?!"
+    "(He stops for a moment)"
+    nun "What's...?"
+    "(Rubbing his eyes, he takes another look towards Molly Stone)"
+    molly "Welcome to the club, Nairda Nun."
+
+# 6. His vision goes to black and he's suddenly back to the car.
+
+    "(Nairda's vision turns to black)"
+    hubby "How did it go? Did you find out how she escaped?"
+    "(Nairda is in the car with Strudle, who is looking expectantly for an answer)"
+    nun "When did I?..."
+    hubby "When did you what?"
+
+    # choice 1 : Tell Hubby you teleported/blacked out, or stay silent
+# QUESTION: I teleported? Or no?
+    "(You don't know how you got into the car, what do you want to say?)"
+    menu:
+        "Oh nothing... I think I'm just tired.":
+            $ correct = truth -1  #Lie choice!
+            play sound "audio/no.mp3"
+            jump lie1
+        "When did I get back into the car? When did I leave the institution?":
+            $ correct = truth +1  #Truth choice!
+            play sound "audio/yes.mp3"
+            jump truth1
+
+label lie1:
+    "(Strudle looks at Nairda a little confused)"
+    hubby "Well, it's been a long day! How about we get some lunch?"
+    nun "Good idea"
+    jump pizzatime
+
+label truth1:
+    "(Strudle looks at Nairda a little confused)"
+    hubby "What do you mean, Nairda? You walked out a few minutes ago and got into the car..."
+    nun "I think I blacked out. I was talking to Molly and now I'm just"
+    nun "here?"
+    hubby "I feel like this has never happened before, but it's been a long day so maybe you're just tired?"
+    "(Strudle takes a longer look at his husband)"
+    hubby "How about we get some lunch and take a break for a while?"
+    nun "Y-yeah... That might do us some good..."
+    jump pizzatime
+
+
+# SCENE 04 - Pizza Time
+# 1. Pizza time getting a pizza at pizza place
+# 2. Noticing the pizza place is a bit.... weird looking, almost plastic
+# 3. CHOICE? - mention it to husband or no?
+label pizzatime:
+    scene pizza
+    "(The two of them head for the pizza shop)"
+    "(Peckish: Owned by the same Chicken and Rooster family since as far back as anyone can remember)"
+    nun "Hey Fry~ the pizza guy~!"
+    fry "Yo!"
+    hubby "How's the wife and kids?"
+    fry "Haha! Don't say that too loud, you'll get my dad's hopes up!"
+    "(Fry doesn't like being in relationships, and never plans on having kids)"
+    "(Nairda looks at Fry and smirks)"
+    nun "Can we have the usual?"
+    fry "The amount of customers that say that! And YOU order something different every time!"
+    "(They share a laugh)"
+    fry "So, what can I actually get you both?"
+    "(They take a moment to look at the menu)"
+    nun "Veggie feast pizza sounds good!"
+    hubby "Yeah, make it a large to share"
+    fry "Roger that!"
+    "(Fry salutes, then goes to make the pizza)"
+    hubby "This is nice, we haven't had a pizza in a while"
+    nun "..."
+    "(Nairda stares off into the distance whiles Strudle scrolls on his phone)"
+    show veggiepizza
+    hubby "This looks GREAT!"
+    "(Nairda looks over)"
+    show pizza1
+    nun "...?"
+    nun "What's...?"
+    scene pizza
+    "(Strudle looks at Nairda)"
+    hubby "Are you ok?"
+    "(Nairda looks back at the pizza)"
+    show veggiepizza
+    nun "Yeah, it's just the pizza is...?"
+    scene pizza
+    hubby "The pizza is?"
+
+        # choice 2 : Tell Hubby pizza was toy, or stay silent
+    # QUESTION: Pizza toy or real
+    "(The pizza looked like it was made of kids clay, but now it's clearly pizza. Or is it?)"
+    menu:
+        "Oh nothing, it's just a normal pizza":
+            $ correct = truth -1  #Lie choice!
+            play sound "audio/no.mp3"
+            fry "Should I take that as a compliment or an insult?"
+            "(Fry and Strudle laugh)"
+            hubby "He's just been tired today from a case. Come'on, Nairda! Let's dig in!"
+            "(After eating the pizza Nairda and Strudle both return home)"
+            "(The funeral for Mrs Beaks is soon, and they've been asked to attend it as a sign of respect from the department)"
+            jump funeral
+
+        "The pizza looked like it was made of clay for a minute, like the entire scene was a giant children's doll house":
+            $ correct = truth +1  #Truth choice!
+            play sound "audio/yes.mp3"
+            "(Suddenly you are unable to move)"
+            nun "I can't..."
+            scene pizza2
+            "(The world around you turns to plastic)"
+            "(You no longer feel your body the same)"
+            "(It is as though you're covered in felt, your limbs a solid resin)"
+            "(Everyone is silent and motionless around you)"
+            "(There's a weird pulling sensation)"
+            "(You can not move)"
+            "(You see them)"
+            "(YOU)"
+            "(SEE)"
+            scene pizza
+            hubby "Nairda?"
+            hubby "NAIRDA!??"
+            "(Strudle is shaking you)"
+            nun "What?"
+            hubby "Hey! What was that? You just stood there like an unresponsive mannequin for three minutes!"
+            fry "Do we still need the ambulance?"
+            hubby "No, I think he's ok? He's back again anyway, whatever that was..."
+            nun "I couldn't move"
+            "(Strudle is very worried about you)"
+            hubby "Can we get the rest of the pizza to go, I want to take him home"
+            fry "Of course, just a sec!"
+            "(The remaining bits of the pizza is boxed up)"
+            "(Nairda and Strudle go back to the car and drive home)"
+            scene apartmentdoor
+            "(Back at the apartment, Strudle fiddles with the house keys)"
+            hubby "Hey, are you sure you're alright?"
+            hubby "You've been weird ever since the institution..."
+            nun "I'm not sure what's wrong with me, I can't even begin to explain it"
+            hubby "Should we make an appointment with Dr Krieger? She might know what's wrong?"
+            nun "Not just yet, we're going to busy for the next few days, the funeral of Mrs Beaks is coming up"
+            nun "The chief wants us to go to it to show our respect and support for Mr Beaks"
+            "(Strudle doesn't look too optimistic)"
+            hubby "Ok"
+            hubby "But after the funeral we should probably get a session"
+            "(Nun looks at Strudle reassuringly)"
+            nun "Of course. I promise."
+
+            jump funeral
+
+label funeral:
+    "(Funeral noises)"
+
+
+
 
 #ENDINGS: This checks if Nairda gets the good ending or the bad ending
 #    label which_end:

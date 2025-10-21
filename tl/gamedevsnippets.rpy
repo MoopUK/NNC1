@@ -22,7 +22,19 @@
 #    show hand r
 #    show tester hand
 
-# Sound references
+
+# PHOTO REFERENCES
+# Hospital
+# https://www.pexels.com/photo/hospital-beside-vehicle-park-and-road-at-night-1692693/
+
+# Pizza shop
+# https://www.pexels.com/photo/a-city-road-at-night-10046158/
+
+# Veggie Pizza
+# https://www.pexels.com/photo/veggie-pizza-on-brown-wooden-tray-5640013/
+
+
+# SOUND REFERENCES
 # hailstorm
 # https://freesound.org/people/Sadiquecat/sounds/730271/
 
