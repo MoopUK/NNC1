@@ -223,7 +223,7 @@ label GameStart:
     "(A large group of reporters and police have flocked inside of a conference room listening to the husband's pleas)"
     "(Nairda and Strudle arrive right at the end of the speech)"
     show beaks n
-    beaks "My wife"
+    beaks "My wife... My BELOVED wife!"
     beaks "If you hear this..."
     play sound "audio/crowd.mp3"
     beaks "Don't give up!"
@@ -249,7 +249,7 @@ label GameStart:
     nun "Thank you, sir."
     show hare happy
     d "Don't worry sir Beaks!"
-    "(Detective Harry Hair nudges Nairda back and takes over the scene)"
+    "(Detective Harry Hare nudges Nairda back and takes over the scene)"
     scene messhall
     show beaks n at left
     show hare happy at right
@@ -257,6 +257,7 @@ label GameStart:
 
     scene messhall
     "(Nairda goes back to his husband)"
+    "(Noticing Beaks has a phone call and has waved Detective Harry Hare away from him)"
     show nun sad at right
     show snun n at left
     nun "I'm not sure what his issue is with me..."
@@ -276,10 +277,13 @@ label GameStart:
     scene messhall
     show nun shy
     show snun shy at left
+    "(Beaks can still be seen on the phone, covering his mouth with his flippers and avoiding the cameras)"
+    hubby "Shall we?"
     "(With the conference coming to a close)"
     scene stairs
-    "(Nairda and Strudle grab a take away and head on home for the evening)"
-    "(And enjoy fly pie for tea)"
+    "(Strudle grabs Nairda's hand and they go back to the car"
+    "Grabbing a take away and heading home for the evening)"
+    "(To enjoy fly pie for tea)"
 
     #ENG BGM "Cafe"
     stop music
@@ -349,10 +353,11 @@ label GameStart:
     chief "Something about not believing it until he sees it for himself"
     "(A commotion from above could be heard as Beaks toppled down the hillside to get to his wife)"
     chief "I'll take it from here, you two go to the institution and see what you can find out"
-    "(The Chief of police composes himself)"
+    "(The Chief of police composes himself, whiles Beaks can be seen throwing himself onto his wife's body screaming out in pain)"
     chief "sigh... Nobody should have to see their significant other this way"
     "(The sound of the Chief shouting to Beaks can be heard in the distance)"
-    "(Whiles Nairda and Strudle head back to their car and make way to the institution)"
+    "(Something about not tampering with possible evidence, mixed with being sorry for his loss)"
+    "(Nairda and Strudle head back to their car and make way to the institution)"
 
 
 
@@ -459,6 +464,7 @@ label GameStart:
 # 6. His vision goes to black and he's suddenly back to the car.
 
     "(Nairda's vision turns to black)"
+    scene stairs
     hubby "How did it go? Did you find out how she escaped?"
     "(Nairda is in the car with Strudle, who is looking expectantly for an answer)"
     nun "When did I?..."
@@ -479,6 +485,7 @@ label GameStart:
 
 label lie1:
     "(Strudle looks at Nairda a little confused)"
+    nun "It's nothing..."
     hubby "Well, it's been a long day! How about we get some lunch?"
     nun "Good idea"
     jump pizzatime
@@ -486,9 +493,9 @@ label lie1:
 label truth1:
     "(Strudle looks at Nairda a little confused)"
     hubby "What do you mean, Nairda? You walked out a few minutes ago and got into the car..."
-    nun "I think I blacked out. I was talking to Molly and now I'm just"
-    nun "here?"
-    hubby "I feel like this has never happened before, but it's been a long day so maybe you're just tired?"
+    nun "I think I blacked out. I was talking to Molly and now I'm just?"
+    nun "... here?"
+    hubby "I feel like this has never happened before, but it's your first case in a while and it's been a long day so maybe you're just tired?"
     "(Strudle takes a longer look at his husband)"
     hubby "How about we get some lunch and take a break for a while?"
     nun "Y-yeah... That might do us some good..."
@@ -507,7 +514,7 @@ label pizzatime:
     fry "Yo!"
     hubby "How's the wife and kids?"
     fry "Haha! Don't say that too loud, you'll get my dad's hopes up!"
-    "(Fry doesn't like being in relationships, and never plans on having kids)"
+    "(Everybody knows that Fry doesn't like having romantic relationships, and he plans on never having kids)"
     "(Nairda looks at Fry and smirks)"
     nun "Can we have the usual?"
     fry "The amount of customers that say that! And YOU order something different every time!"
@@ -539,7 +546,7 @@ label pizzatime:
 
         # choice 2 : Tell Hubby pizza was toy, or stay silent
     # QUESTION: Pizza toy or real
-    "(The pizza looked like it was made of kids clay, but now it's clearly pizza. Or is it?)"
+    "(The pizza looked like it was made of kids clay? No wait, now it's clearly a real pizza. Now it looks like? What do you say?)"
     menu:
         "Oh nothing, it's just a normal pizza":
             $ truth = truth -1  #Lie choice!
@@ -623,7 +630,7 @@ label funeral:
     "(Nairda hopes that is enough to stop the judgemental stares towards his husband, now seven deep into the tomato dishes)"
     "(Mr Beaks comes in, looks around, and starts to dab his eyes with a clean pocket square)"
     nun "Mr Beaks, I'm so sorry for your loss."
-    "(Beaks grabs Nairda's hand and shakes it vigourously)"
+    "(Beaks grabs Nairda's hands and shakes them vigourously)"
     "(Nairda has no idea why Beak's hands feel clammy)"
     beaks "Thank you Nairda, who's here at the moment?"
     "(Beaks lets go of Nairda's hands and looks around some more, making a mental note of the guests)"
@@ -669,7 +676,7 @@ label funeral:
     beaks "Well you know, after a death it's best to get rid of their stuff so you can have a fresh start"
     beaks "You get it, right?"
     "(Nairda looks up confused)"
-    nun "But it's memories? I haven't even moved my partner's stuff out of the office and he passed over a year ago"
+    nun "But it's memories? I haven't even moved my detective partner's stuff out of the office and he passed over a year ago"
     "(Beaks looks back at Nairda)"
     beaks "I guess people mourn in different ways. Let me show you to the bathrooms downstairs."
     nun "Ah, yes. Of course. My apologies!"
@@ -703,6 +710,7 @@ label funeral:
     hubby "Can we just go before he sees us snooping?"
     nun "Yeah... we should go..."
 
+    # CHANGE TO ROADS AND FANCY HOUSES
     "(The drive home is rather long, the Beaks Mansion is so deep into the richest part of town that you get an
     uncanny valley vibe from the sheer size of the plots and oddly laid out housing designs)"
     "(After longer than they wished to have needed to drive to finally get out of there)"
@@ -710,7 +718,7 @@ label funeral:
     comfort show before having an early night)"
 
 # SCENE 06 - Talking about the case
-
+    scene lab
     "(The next day: At the police station.)"
     chief "We need to find the killer of Mrs Beaks, Nairda! What do you have for me?"
 
@@ -762,7 +770,6 @@ label funeral:
 
 
 label evidence1:
-    "(Thrown away wife items)"
 # 2. He seemed more proactive about finding her than finding the murderer
     menu:
         "He seemed more proactive about finding her body than the killer":
@@ -851,7 +858,7 @@ label mistress:
 
 # 3. Says she'd be happy to help if she isn't named directly and is kept from dangers as he's a dangerous man
 #   Implications he killed his wife to finally be with her when she doesn't want this
-
+    scene apartmentlongshot
     "(Nairda and Strudle go to the address he noted down)"
     "(In a disadvantaged part of town, the apartment building has several teens outside)"
     "(Nairda gets nervous around teenagers)"
@@ -859,10 +866,12 @@ label mistress:
     "(Strudle knows the news is mostly nonscence, but he did grow up in a safer environment to Nairda and most of their friends,)"
     "(and generally most of their day-to-day acquaintances, so he understands it isn't the most *outlandish* anxiety to have)"
     "(They go inside and make their way to the apartment door, knocking the handle lightly)"
+    "(A shadow in the peep hole forms and disappears momentarily)"
     olive "Just a second!"
     "(The door opens and a frail rabbit peeking around the corner of the door)"
+    "(She looks relieved that you were frogs, like she was expecting something else)"
     olive "I'm not interested in buying anything, I'm sorry..."
-    nun "Ah! No! We're, well I'm a detective, this is my partner Strudle."
+    nun "Ah! No! We're, well I'm a detective, this is my partner Strudle. He's like my assistant!"
     "(She looks at Strudle and nods knowingly)"
     olive "Is there an issue, err detective?"
     nun "I was wondering if we could ask you about someone in particular, regarding an open investigation?"
@@ -883,7 +892,7 @@ label mistress:
     "What do you wish to ask about?"
     menu:
         "Were you two close...?":
-            $ correct = solved +1  #Solved yes choice!
+            $ solved = solved +1  #Solved yes choice!
             play sound "audio/yes.mp3"
             olive "We were once, we used to date."
             nun "But he's married?"
@@ -915,74 +924,108 @@ label mistress:
             olive "He sounded angry. He's sounded angry before whenever I've challenged him on anything."
             "(Gesturing to her ears and clothes)"
             olive "Like not tieing my ears down, and maybe wearing something a little more comfortable to a dinner date"
-
+            olive "I've had people knocking on the door in black suits, asking me to go see him, but I haven't opened the door and pretended I wasn't in"
+            olive "I haven't been to work in 3 days! I don't want to lose my job but I'm scared of what might happen if I leave my apartment"
+            olive "I don't even open the curtains so people can't see from inside"
+            olive "I'm a mess..."
+            "(Olivia sits on a small rocking chair and puts her hands on her face)"
             jump boxquestion
 
 # 3. Bad choice - links to possible Mistress? Has address and name noted down
         "So he got you presents for... favours?":
-            $ correct = solved -1 #Solved no choice!
+            $ solved = solved -1 #Solved no choice!
             play sound "audio/no.mp3"
-            hubby "Really Nairda? There's been loads of stuff!"
-            hubby "What about that parcel?"
-            nun "Oh, well there was a returned parcel that was addressed to a random woman by the door of the mansion"
-            chief "Okay, and?"
-            nun "It had 'refused delivery' stamps on it, also smelled like perfume."
-            chief "So it wasn't accepted by this woman, and was returned to the Beaks Mansion?"
-            hubby "Yeah it did seem a little odd"
-            chief "Do you remember the name and address?"
-            nun "I made a note of them, yes."
-            chief "Go check it out... He might have had a jealous mistress"
-            jump mistress
+            olive "What are you implying?!?"
+            "(There are expensive dresses thrown in the corner, and several expensive cosmetic items strewn around the apartment)"
+            nun "Those dresses look to be worth something"
+            hubby "And these cosmetics? It'd take me a month to buy that moisturising routine"
+            "(Olivia looks closed off. Both offended at the implication, and ashamed at the amount of items in her posession that doesn't make the siuation she's in look good)"
+            olive "He got me all of these. He tells me what to wear, and wants me to look 'young and fresh' for dinner dates where we'd be seen by his friends"
+            "(She doesn't look like a criminal, she lives nowhere near any hills, and there isn't a single inkling of shoes being hidden anywhere in the tiny, barely furnished apartment)"
+            olive "He'd of had me shaved bare if spotty ingrown hairs weren't a massive issue with rabbits!"
+            nun "I'm sorry... I've had.. we've had a stressful few days ourselves"
+            olive "Maybe don't jump to conclusions next time, you don't know what someone has been through."
+            jump boxquestion
 
-label evidence2:
-    "(More interested in finding the murderer)"
-# 1. Current evidence is only speculation about husband because he thrown the stuff away
+label boxquestion:
+    "What do you wish to ask about?"
     menu:
-        "Mr Beaks had packed up all of his wife's things, he said he's getting rid of it all":
-            $ correct = solved +1  #Solved yes choice!
+        "There was an undelivered parcel at his home":
+            $ solved = solved +1  #Solved yes choice!
             play sound "audio/yes.mp3"
-            chief "All of it?"
-            nun "Yeah, in the master bedroom everything was in boxes"
-            nun "He said he is getting rid of it all so he can have a fresh start"
-            chief "That seems a little quick, doesn't it? She's only been dead for a week..."
-            nun "That's what I thought too"
-            chief "Good catch, we should look into that a little more"
-            jump evidence3
+            olive "..."
+            "(She seems to be thinking)"
+            hubby "It had your name and address on it, it was stamped with 'refused' on it, and was seemingly returned to sender"
+            nun "It's honestly the only reason we knew about your existence in the first place"
+            olive "Oh dear... He had started sending me presents since the break up, I stupidly accepted a parcel the first time"
+            olive "I thought maybe I ordered something and forgot about it"
+            olive "Since seeing it was a gift from him, I've refused every other parcel since"
+            "(She points to a box of chocolates inside of a 'Rainforrest' delivery package in the corner)"
+            olive "You can take that if you want to, I don't want it in my house but I don't want to be seen leaving the apartment at the moment"
+            olive "I'm not sure what'll happen to me if him or one of his lackies see me outside"
+            "(Nun puts the package into an evidence bag)"
+            nun "Thanks, this could actually help a lot"
+            olive "You're welcome... take the dresses too if you like. They've only been worn once each, he said he could not have 'his woman' wearing the same outfit to a date twice"
+            "(The dresses are a very different style to the Olivia you see right now, in comfortable jogging bottoms and an oversized Hare State University hoody)"
+            nun "I'm not sure if we need those, but maybe the reciepts if you have them? They might have some of his bank information on them"
+            olive "Of course! He always left those in the boxes in case I could fit into a smaller size"
+            "(She shuffles through the piles of dresses and packing material and pulls out several reciepts)"
+            nun "Thank you!"
+            "(He places them into another evidence bag)"
+            jump helpher
 
-# 3. Bad choice - links to possible Mistress? Has address and name noted down
-        "I don't have anything else...":
-            $ correct = solved -1 #Solved no choice!
+
+        "Is perfume not good enough for the likes of you?":
+            $ solved = solved -1  #Solved no choice!
             play sound "audio/no.mp3"
-            hubby "Really Nairda? There's been loads of stuff!"
-            hubby "What about that parcel?"
-            nun "Oh, well there was a returned parcel that was addressed to a random woman by the door of the mansion"
-            chief "Okay, and?"
-            nun "It had 'refused delivery' stamps on it, also smelled like perfume."
-            chief "So it wasn't accepted by this woman, and was returned to the Beaks Mansion?"
-            hubby "Yeah it did seem a little odd"
-            chief "Do you remember the name and address?"
-            nun "I made a note of them, yes."
-            chief "Go check it out... He might have had a jealous mistress"
-            jump mistress
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            olive "What are you implying?"
+            nun "The undelivered box at Beaks Mansion. Smelled like expensive stuff."
+            hubby "And it's not like you say no to expensive things"
+            "(gesturing to the fancy cosmetics and dresses)"
+            olive "Are you high? I hate this stuff! Don't you think I'd hang the dresses up in the wardrobe if I actually LIKED owning them!"
+            "(A frustrated Olivia gives Nairda and Strudle a piece of her mind)"
+            olive "Tight fitted dresses showing way TOO MUCH fur! Tieing my ears back so they didn't embarrass him!"
+            olive "The beauty regimes to keep me 'young', those stupid diet pills and diet plans!"
+            olive "He even wanted me to get plastic surgery! Ear shortening! Foot webbing?!?"
+            olive "He was an intimidating man but I thought I could just handle it."
+            "(Nairda and Strudle look at each other in mutual agreement and concern)"
+            olive "I've spent my entire life with my head barely above water. A rich man wanted to date me. He helped with bills and all I had to do was..."
+            "(Olivia looks down to the ground and mumbles)"
+            olive "Whatever he said, I guess..."
+            jump helpher
 
 
 
 # SCENE 08
+label helpher:
+    "(It is clear she needs help)"
+    nun "He sounds like a terrible person in real life"
+    hubby "We've only ever heard about him recently, we knew he was powerful and a mistress in general isn't out of the realm of possibilities with rich folk"
+    nun "But it sounded like he was trying to mold you into something you aren't comfortable with"
+    nun "And it also seems like he doesn't like taking no for an answer"
+    "(Olivia is visibly upset and stressed out)"
+    nun "Does it sound like he... maybe had his wife killed to be with you in a more official setting?"
+    "(Olivia looks even more on edge)"
+    olive "With how he sounded on the phone recently, I'm almost certain that he did it himself so I could replace her"
+    olive "He always went on about how his friends all had really young women hanging off their arms"
+    olive "How he wished I would stop aging"
+    olive "He even made jokes about replacing me with a 'younger model' whenever I admitted to skipping the beauty regimen on one day"
+    hubby "That sounds awful"
+    nun "I agree"
+    olive "I want to help you buy you have to promise me I'll be safe"
+    olive "He said he has friends in the police force too, I don't want to be officially named in the reports"
+    olive "I don't want anything to happen to me... I just want this to be over with"
+    olive "I heard that a woman from the institution had escaped... Did he pay her to kill Mrs Beaks?"
+    nun "To be honest... I kind of get the feeling she was planted there on purpose to make it look like she did it"
+    hubby "Or so someone other than him found the body!"
+    "(Nairda stands up from the sofa)"
+    nun "We'll get back to you! If you need anything here's my card and number! Do not hesitate to call!"
+    "(Nairda and Strudle leave the apartment block and get back into the car)"
+
+    nun "We need to make a plan to keep her safe and have him admit to any crimes to do with his wife's death)"
+    nun "And I think I need to talk to Molly Stone again"
+
+
 
 # SCENE XX - ENDINGS ENDINGS ENDINGS ENDINGS
 # This checks which ending Nairda gets:

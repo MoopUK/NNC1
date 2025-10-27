@@ -83,7 +83,7 @@ image nun shy:
     zoom 0.5
 # Beaks (man with missing wife)
 image beaks n:
-    "placeholder"
+    "beaks"
     zoom 0.5
 image beaks sad:
     "placeholder"
