@@ -4,6 +4,7 @@
 # Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
 default truth = 0
+default solved = 0
 
 # Character List
 

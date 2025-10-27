@@ -33,6 +33,14 @@
 # Veggie Pizza
 # https://www.pexels.com/photo/veggie-pizza-on-brown-wooden-tray-5640013/
 
+# funeral
+# https://www.pexels.com/photo/serene-autumn-cemetery-with-lantern-lit-graves-34351053/
+
+# beaksmansion (funeral buffet)
+# https://www.pexels.com/photo/exquisite-buffet-spread-in-rustic-indoor-setting-34357891/
+
+
+
 
 # SOUND REFERENCES
 # hailstorm
