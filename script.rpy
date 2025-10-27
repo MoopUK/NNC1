@@ -727,7 +727,7 @@ label funeral:
     menu:
 # 1. Current evidence is only speculation about husband because he thrown the stuff away
         "Mr Beaks had packed up all of his wife's things, he said he's getting rid of it all":
-            $ correct = solved +1  #Solved yes choice!
+            $ solved = solved +1  #Solved yes choice!
             play sound "audio/yes.mp3"
             chief "All of it?"
             nun "Yeah, in the master bedroom everything was in boxes"
@@ -738,7 +738,7 @@ label funeral:
             jump evidence1
 # 2. He seemed more proactive about finding her than finding the murderer
         "He seemed more proactive about finding her body than the killer":
-            $ correct = solved +1  #Solved yes choice!
+            $ solved = solved +1  #Solved yes choice!
             play sound "audio/yes.mp3"
             chief "What do you mean?"
             nun "Since finding her body, he hasn't mentioned anything about the case"
@@ -804,7 +804,6 @@ label evidence1:
             jump mistress
 
 label evidence2:
-    "(More interested in finding the murderer)"
 # 1. Current evidence is only speculation about husband because he thrown the stuff away
     menu:
         "Mr Beaks had packed up all of his wife's things, he said he's getting rid of it all":
@@ -1030,12 +1029,48 @@ label helpher:
 # SCENE 09 - Back to the institute
 # - get Molly to agree to pretending to be psychic and finding Molly's body in a similar place as Beaks' wife
 # -
+    "(The Institute: A small brown building, with gold patterns painted meticulously on the roof)"
+    "(If you didn't have claustrophobia before, you most certainly do now.)"
+    "(Nobody wants to be in the institution.)"
+    "(The inside feels like one long room wrapped in white fabric, shielding everyone from each other's gaze)"
+    "(The air isn't thick)"
+    "(It's just absent)"
+    molly "You came back to this place? Why would anybody do that?"
+    nun "I..."
+    molly "Is it the reality? Because I don't know how to stop it once it's started"
+    nun "No, it's not that."
+    nun "I think we need your help"
+    jump which_end
 
-
-
+# SCENE XX - ENDINGS ENDINGS ENDINGS ENDINGS
+# This checks which ending Nairda gets:
+# - Tells truth about visions && solves the case - You tell the truth and take meds to stop it / solve case too
+label which_end:
+    if truth >= 2 and solved >= 3:
+        jump truthsolved_end
+# - Tells truth about visions && does not solve case - You tell the truth and take meds to stop it / don't solve case (due to this stress)
+    elif truth >= 2 and solved < 3:
+        jump truthnotsolved_end
+# - Lies about visions && solves the case - You lie out of fear and don't take meds to stop it & you can see you're in a simulation type situation for the rest of
+# your life/ but at least you solved the case (maybe visit Molly)
+    elif truth < 2 and solved >= 3:
+        jump liesolved_end
+#- Lies about visions and does not solve the case - You lie out of fear & can see you're in a simulation type situation for the rest of your life / don't solve case (due to the stress) / Everyone is worried about you
+    elif truth < 2 and solved < 3:
+        jump lienotsolved_end
 
 
 # SCENE 10 - One of the endings?
+
+# your life/ but at least you solved the case (maybe visit Molly)
+
+label truthsolved_end:
+    # Nairda tells the truth about seeing things, and the therapist helps with medication
+    # The hands slowly disappear from existance
+    # solved same way as other
+    "truth solved"
+
+
     "(Everyone goes down the hill towards the place where Mrs Beaks was found)"
     molly "Ohhhh it's getting stronger! I think her name is... Olive tree? That can't be right..."
     "(Molly holds her head then points one finger towards the bottom of the hill)"
@@ -1073,27 +1108,79 @@ label helpher:
     "(Olivia opens one eye slightly and whispers whiles still as still as the grave)"
     olive "Are his lackies still here?"
     nun "No no, it's just me, Strudle, and Molly Stone"
-    olive "Thank the gods... My bears are killing me!"
+    olive "Thank the gods... My ears are killing me!"
+    "(Olivia takes out her hair tie and stands up, dusting herself off, sighing a breath of relief)"
+    "(Faking her own death with help from the police, means she'll be able to start a new identity)"
+    "(Not that Beaks will be getting out of prison anytime soon.)"
+
+    # Nairda tells the truth about seeing things, and the therapist helps with medication
+    # The hands slowly disappear from existance
 
 
+label truthnotsolved_end:
+    "truth not solved"
+    # Nairda tells the truth about seeing things, and the therapist helps with medication
+    # The hands slowly disappear from existance
 
-# SCENE XX - ENDINGS ENDINGS ENDINGS ENDINGS
-# This checks which ending Nairda gets:
-# - Tells truth about visions && solves the case - You tell the truth and take meds to stop it / solve case too
-#    label which_end:
-#        if truth >= 3 and solved >= 3:
-#            jump truthsolved_end
-# - Tells truth about visions && does not solve case - You tell the truth and take meds to stop it / don't solve case (due to this stress)
-#        elif truth >= 3 and solved <= 3:
-#            jump truthnotsolved_end
-# - Lies about visions && solves the case - You lie out of fear and don't take meds to stop it & you can see you're in a simulation type situation for the rest of
-# your life/ but at least you solved the case (maybe visit Molly)
-#        elif truth <= 3 and solved >= 3:
-#            jump liesolved_end
-#- Lies about visions and does not solve the case - You lie out of fear & can see you're in a simulation type situation for the rest of your life / don't solve case (due to the stress) / Everyone is worried about you
-#        elif truth <= 3 and solved <= 3:
-#            jump lienotsolved_end
+    # 6 months later:
+    # Beaks has a new wife, younger bird of some description
+    # A woman went missing recently from her apartment, a rabbit called Olivia
+
+label liesolved_end:
+    "(Everyone goes down the hill towards the place where Mrs Beaks was found)"
+    molly "Ohhhh it's getting stronger! I think her name is... Olive tree? That can't be right..."
+    "(Molly holds her head then points one finger towards the bottom of the hill)"
+    molly "It's Olive under the tree!"
+    "(Down the hill next to a tree, Olivia's body is barely visible, laying still.)"
+    "(In an expensive dress, red marks around her ears from being painfully tied back.)"
+    "(Beaks sees her too, and runs to her side screaming in agony)"
+    beaks "Noooo! It can't be!!!"
+    "(The chief stops him from coming into close contact with the body)"
+    beaks "Get off of me! I loved Olivia! I even got rid of my third wife so I could be with her!"
+    chief "Wait a minute..."
+    "(Beaks doesn't even realise what he's saying before the Chief remembers other details)"
+    chief "Third...? That's right! You're last wife, Baabara the sheep? She went missing when she was only 25 years old!"
+    chief "We never found the body... it was a cold case..."
+    d "I thought his last wife was that actress? Betty Le Coo? That chick had legs for DAYS! What ever happened to her?"
+    "(Nairda looks at Strudle and Strudle looks at him)"
+    nun "It was a cold case."
+    hubby "Nairda was helping to work on that case when he was fresh out of detective school... She was 26? 27 years old? Suddenly went missing..."
+    hubby "Had a penguin husband... Was that Beaks?!?"
+    "(At this point Beaks hears the commotion and puts together exactly what he had blurted out moments prior)"
+    beaks "Well you see... I have very bad luck and... If you'd let me I can show you everything you need to know back in my house"
+    "(Beaks starts to waddle slowly backwards towards his mansion)"
+    nun "STOP RIGHT THERE!"
+    "(Beaks flings around and makes a run for it...)"
+    "(A run for his mansion...)"
+    "(His mansion...)"
+    "(on...)"
+    "(a...)"
+    "(HILL!)"
+    chief "FREEZE!"
+    "(The chief makes a run for Beaks, tackling him to the ground, and arresting him for the murder of Beaks,
+    and as a suspected murderer in two other cold cases of murdered women under the age of 30 in their respected animal years.)"
+    "(Once he was safely in the police car and out of view, Nairda went over to Olivia's body)"
+    nun "You did amazingly, Olivia, it's safe to get up now"
+    "(Olivia opens one eye slightly and whispers whiles still as still as the grave)"
+    olive "Are his lackies still here?"
+    nun "No no, it's just me, Strudle, and Molly Stone"
+    olive "Thank the gods... My ears are killing me!"
+    "(Olivia takes out her hair tie and stands up, dusting herself off, sighing a breath of relief)"
+    "(Faking her own death with help from the police, means she'll be able to start a new identity)"
+    "(Not that Beaks will be getting out of prison anytime soon.)"
+    # Scene where Nairda and Strudle are home and Strudle asks if Nairda is feeling ok as he's been weird lately
+    # Nairda reassures Strudle he's ok, but he can see the hand holding Strudle whiles they're talking
+    # He wants to live in blissful ignorance
+    "(The End)"
+
+label lienotsolved_end:
+    "lied and not solved"
+# - Lies about visions && not solved the case
+# - You lie out of fear and don't take meds to stop it & you can see you're in a simulation type situation for the rest of
+
+    # 6 months later:
+    # Beaks has a new wife, younger bird of some description
+    # A woman went missing recently from her apartment, a rabbit called Olivia
 
     # This ends the game.
-
     return
