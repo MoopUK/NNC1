@@ -37,7 +37,7 @@ define t = Character("Tony", color="#FF0000")#Red
 define e = Character("Ezekiel", color="#FFE4E1")#MistRose
 
 # Misc characters
-define d = Character("Detective", color="#FFCC33")#yellow # Angry police detective
+define d = Character("Detective Harry Hare", color="#FFCC33")#yellow # Angry police detective
 define mor = Character("Mortician", color="#800000")#maroon # Mortician
 define r = Character("Receptionist", color="AABBCC") # Psychologist's receptionist and wife
 define drk = Character("Dr Krieger", color="FFCCAA") # Psychologist

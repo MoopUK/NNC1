@@ -999,31 +999,81 @@ label boxquestion:
 # SCENE 08
 label helpher:
     "(It is clear she needs help)"
-    nun "He sounds like a terrible person in real life"
-    hubby "We've only ever heard about him recently, we knew he was powerful and a mistress in general isn't out of the realm of possibilities with rich folk"
+    nun "He sounds like a terrible person in real life but he hid it well when we were with him"
+    hubby "It might be because we were associated with the police, so he was on good behaviour?"
+    hubby "As we've only ever heard about him recently, we were told he was powerful... so a mistress in general isn't out of the realm of possibilities with rich folk"
     nun "But it sounded like he was trying to mold you into something you aren't comfortable with"
     nun "And it also seems like he doesn't like taking no for an answer"
     "(Olivia is visibly upset and stressed out)"
-    nun "Does it sound like he... maybe had his wife killed to be with you in a more official setting?"
-    "(Olivia looks even more on edge)"
-    olive "With how he sounded on the phone recently, I'm almost certain that he did it himself so I could replace her"
+    "(Nairda whispers to Strudle)"
+    nun "Does it sound like he... maybe had his wife killed to be with her in a more official setting?"
+    "(Olivia looks even more on edge, she couldn't hear what he said but she felt like she knew what it was anyway and she steps in closer)"
+    olive "With how he sounded on the phone recently, I'm almost certain that he did it so I could replace her"
     olive "He always went on about how his friends all had really young women hanging off their arms"
     olive "How he wished I would stop aging"
-    olive "He even made jokes about replacing me with a 'younger model' whenever I admitted to skipping the beauty regimen on one day"
+    olive "He even made jokes about replacing me with a 'younger model' whenever I admitted to skipping the beauty regimens he gave me, even for one day"
     hubby "That sounds awful"
-    nun "I agree"
-    olive "I want to help you buy you have to promise me I'll be safe"
+    nun "I agree..."
+    olive "I want to help you but you have to promise me I'll be safe!"
     olive "He said he has friends in the police force too, I don't want to be officially named in the reports"
     olive "I don't want anything to happen to me... I just want this to be over with"
-    olive "I heard that a woman from the institution had escaped... Did he pay her to kill Mrs Beaks?"
+    olive "I also heard that a woman from the institution had escaped... Maybe he paid her to kill Mrs Beaks?"
     nun "To be honest... I kind of get the feeling she was planted there on purpose to make it look like she did it"
     hubby "Or so someone other than him found the body!"
     "(Nairda stands up from the sofa)"
-    nun "We'll get back to you! If you need anything here's my card and number! Do not hesitate to call!"
+    nun "We'll get back to you! If you need anything here's my card and number! Do NOT hesitate to call!"
     "(Nairda and Strudle leave the apartment block and get back into the car)"
+    scene apartmentblock
+    nun "We need to make a plan to keep her safe and have him admit to any crimes to do with his wife's death..."
+    nun "And I think I need to talk to Molly Stone again to do it!"
 
-    nun "We need to make a plan to keep her safe and have him admit to any crimes to do with his wife's death)"
-    nun "And I think I need to talk to Molly Stone again"
+# SCENE 09 - Back to the institute
+# - get Molly to agree to pretending to be psychic and finding Molly's body in a similar place as Beaks' wife
+# -
+
+
+
+
+
+# SCENE 10 - One of the endings?
+    "(Everyone goes down the hill towards the place where Mrs Beaks was found)"
+    molly "Ohhhh it's getting stronger! I think her name is... Olive tree? That can't be right..."
+    "(Molly holds her head then points one finger towards the bottom of the hill)"
+    molly "It's Olive under the tree!"
+    "(Down the hill next to a tree, Olivia's body is barely visible, laying still.)"
+    "(In an expensive dress, red marks around her ears from being painfully tied back.)"
+    "(Beaks sees her too, and runs to her side screaming in agony)"
+    beaks "Noooo! It can't be!!!"
+    "(The chief stops him from coming into close contact with the body)"
+    beaks "Get off of me! I loved Olivia! I even got rid of my third wife so I could be with her!"
+    chief "Wait a minute..."
+    "(Beaks doesn't even realise what he's saying before the Chief remembers other details)"
+    chief "Third...? That's right! You're last wife, Baabara the sheep? She went missing when she was only 25 years old!"
+    chief "We never found the body... it was a cold case..."
+    d "I thought his last wife was that actress? Betty Le Coo? That chick had legs for DAYS! What ever happened to her?"
+    "(Nairda looks at Strudle and Strudle looks at him)"
+    nun "It was a cold case."
+    hubby "Nairda was helping to work on that case when he was fresh out of detective school... She was 26? 27 years old? Suddenly went missing..."
+    hubby "Had a penguin husband... Was that Beaks?!?"
+    "(At this point Beaks hears the commotion and puts together exactly what he had blurted out moments prior)"
+    beaks "Well you see... I have very bad luck and... If you'd let me I can show you everything you need to know back in my house"
+    "(Beaks starts to waddle slowly backwards towards his mansion)"
+    nun "STOP RIGHT THERE!"
+    "(Beaks flings around and makes a run for it...)"
+    "(A run for his mansion...)"
+    "(His mansion...)"
+    "(on...)"
+    "(a...)"
+    "(HILL!)"
+    chief "FREEZE!"
+    "(The chief makes a run for Beaks, tackling him to the ground, and arresting him for the murder of Beaks,
+    and as a suspected murderer in two other cold cases of murdered women under the age of 30 in their respected animal years.)"
+    "(Once he was safely in the police car and out of view, Nairda went over to Olivia's body)"
+    nun "You did amazingly, Olivia, it's safe to get up now"
+    "(Olivia opens one eye slightly and whispers whiles still as still as the grave)"
+    olive "Are his lackies still here?"
+    nun "No no, it's just me, Strudle, and Molly Stone"
+    olive "Thank the gods... My bears are killing me!"
 
 
 
