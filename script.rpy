@@ -1068,9 +1068,7 @@ label truthsolved_end:
     # Nairda tells the truth about seeing things, and the therapist helps with medication
     # The hands slowly disappear from existance
     # solved same way as other
-    "truth solved"
-
-
+    #"truth solved"
     "(Everyone goes down the hill towards the place where Mrs Beaks was found)"
     molly "Ohhhh it's getting stronger! I think her name is... Olive tree? That can't be right..."
     "(Molly holds her head then points one finger towards the bottom of the hill)"
@@ -1115,18 +1113,88 @@ label truthsolved_end:
 
     # Nairda tells the truth about seeing things, and the therapist helps with medication
     # The hands slowly disappear from existance
+    scene emptygym
+    "(Nairda tells his therapist all about 'the hands' and his flashes of the world looking plastic and full of giant doll house furniture)"
+    drk "I'm happy you told me about this Nairda"
+    nun "..."
+    drk "There's been cases of this before, so we know how to treat it!"
+    drk "It can return if you ever stop taking these..."
+    "(Dr Krieger hands Nairda a prescription for 'handsbegoneapine')"
+    drk "But the few patients I have prescribed this too said everything went back to normal on them, so I highly suggest trying them"
+    drk "And we can have a few extra sessions over the next few weeks to see if they're working, and adjust the dosage as needed, and so on."
+    "(Nairda is happy to take anything to make these 'hands' stop showing up in his daily life)"
+    "(And to stop these unnerving flashes)"
+    nun "Thank you, Dr Krieger."
+    nun "See you on Wednesday for our usual session?"
+    drk "I'm looking forward to it!"
+    "(Nairda leaves the therapy office and Strudle drives him to the pharmacy to grab his new prescription)"
+    "(As an extra treat, Strudle suggests fly pie for tea...)"
+    "(Nairda would never turn down a fly pie...)"
+    "(Everything is as it should be.)"
+
+    # Ending line
+    "(The End)"
+    "(ENDING 1 of 4: You told the truth about seeing things and got help. You will no longer see the reality of the situation you are in.
+    That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
+    "(This is a good thing though, right? Ignorance is bliss! And those sudden flashes of reality were terribly unnerving so this really is for the best)"
+    "(And hey! You solved the case! Beaks is arrested! Good job!)"
 
 
 label truthnotsolved_end:
-    "truth not solved"
+    #"truth not solved"
     # Nairda tells the truth about seeing things, and the therapist helps with medication
     # The hands slowly disappear from existance
+    scene emptygym
+    "(Nairda tells his therapist all about 'the hands' and his flashes of the world looking plastic and full of giant doll house furniture)"
+    drk "I'm happy you told me about this Nairda"
+    nun "..."
+    drk "There's been cases of this before, so we know how to treat it!"
+    drk "It can return if you ever stop taking these..."
+    "(Dr Krieger hands Nairda a prescription for 'handsbegoneapine')"
+    drk "But the few patients I have prescribed this too said everything went back to normal on them, so I highly suggest trying them"
+    drk "And we can have a few extra sessions over the next few weeks to see if they're working, and adjust the dosage as needed, and so on."
+    "(Nairda is happy to take anything to make these 'hands' stop showing up in his daily life)"
+    "(And to stop these unnerving flashes)"
+    nun "Thank you, Dr Krieger."
+    nun "See you on Wednesday for our usual session?"
+    drk "I'm looking forward to it!"
+    "(Nairda leaves the therapy office and Strudle drives him to the pharmacy to grab his new prescription)"
+    "(As an extra treat, Strudle suggests fly pie for tea...)"
+    "(Nairda would never turn down a fly pie...)"
+    "(Everything is as it should be.)"
+
 
     # 6 months later:
     # Beaks has a new wife, younger bird of some description
     # A woman went missing recently from her apartment, a rabbit called Olivia
+    "(6 months later:)"
+    "(The news shows the story of a missing person's case, a rabbit called Olivia from down town)"
+    "(Her body was found with several botched plastic surgeries...)"
+    "(Ear shortening, and foot webbing being only two of them...)"
+    "(She was 20 years old...)"
+    "(The news then switches to a happy story)"
+    "(Of Beaks running for Mayor with his new wife, Tweetsy!)"
+    "(A beautiful yellow canary whos modelling career is taking the world by storm!)"
+    "(And Beaks' heart <3 )"
+    "(The news wishes them a long and happy life)"
+    "(He deserves it after the tragic death of his previous wife)"
+
+
+# Ending line
+    "(The End)"
+    "(ENDING 2 of 4: You told the truth about seeing things and got help. You will no longer see the reality of the situation you are in.
+    That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
+    "(This is a good thing though, right? Ignorance is bliss! And those sudden flashes of reality were terribly unnerving so this really is for the best)"
+    "(You didn't even solve the case... Beaks is free, and every several years when his current wife gets to the horrifyingly old age of....)"
+    "(*cough* anything over 25...)"
+    "(He'll have her killed, and remarry his newest mistress)"
+    "(Rinse and repeat.)"
+    "(Rinse and repeat.)"
+    "(Rinse and repeat.)"
+
 
 label liesolved_end:
+    # lie solved
     "(Everyone goes down the hill towards the place where Mrs Beaks was found)"
     molly "Ohhhh it's getting stronger! I think her name is... Olive tree? That can't be right..."
     "(Molly holds her head then points one finger towards the bottom of the hill)"
@@ -1168,19 +1236,85 @@ label liesolved_end:
     "(Olivia takes out her hair tie and stands up, dusting herself off, sighing a breath of relief)"
     "(Faking her own death with help from the police, means she'll be able to start a new identity)"
     "(Not that Beaks will be getting out of prison anytime soon.)"
+
+
     # Scene where Nairda and Strudle are home and Strudle asks if Nairda is feeling ok as he's been weird lately
     # Nairda reassures Strudle he's ok, but he can see the hand holding Strudle whiles they're talking
     # He wants to live in blissful ignorance
+    scene apartmentdoor
+    hubby "Hey, Nairda?"
+    nun "Hmm?"
+    hubby "Are you sure you've been feeling ok?"
+    "(Nairda watches as 'the hands' move Strudle around the apartment)"
+    nun "Never been better! Why do you ask?"
+    "(Strudle slides across the plastic floor as his stiff body smacks a table and hovers around a fake kitchen sink)"
+    hubby "I feel like you've changed recently... You seem to be more anxious recently."
+    hubby "You've been whimpering in your sleep..."
+    hubby "What are the hands?"
+    "(Nairda composes himself as best he can, walks over to his plastic husband, holds that solid resin hand and smiles)"
+    nun "I have no idea what you're talking about. I must have been having a bad dream."
+    nun "I love you, Strudle."
+    "(Strudle smiles)"
+    hubby "I love you too, Nairda!"
+
+    # Ending line
     "(The End)"
+    "(ENDING 3 of 4: You lied about seeing things and didn't get help. Now you will forever see the reality of the situation you are in.
+    That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
+    "(but hey! At least you solved the case! Beaks is arrested... so good for you!)"
+    "(For you personally, seeing 'the hands' and the sudden flashes in your mind of actually being inside of giant plastic doll houses is
+    terribly unnerving and out of your control, but you'll probably get used to it eventually...)"
+    "(Probably...)"
 
 label lienotsolved_end:
-    "lied and not solved"
+    # "lied and not solved"
 # - Lies about visions && not solved the case
 # - You lie out of fear and don't take meds to stop it & you can see you're in a simulation type situation for the rest of
+    scene apartmentdoor
+    hubby "Hey, Nairda?"
+    nun "Hmm?"
+    hubby "Are you sure you've been feeling ok?"
+    "(Nairda watches as 'the hands' move Strudle around the apartment)"
+    nun "Never been better! Why do you ask?"
+    "(Strudle slides across the plastic floor as his stiff body smacks a table and hovers around a fake kitchen sink)"
+    hubby "I feel like you've changed recently... You seem to be more anxious recently."
+    hubby "You've been whimpering in your sleep..."
+    hubby "What are the hands?"
+    "(Nairda composes himself as best he can, walks over to his plastic husband, holds that solid resin hand and smiles)"
+    nun "I have no idea what you're talking about. I must have been having a bad dream."
+    nun "I love you, Strudle."
+    "(Strudle smiles)"
+    hubby "I love you too, Nairda!"
+
 
     # 6 months later:
     # Beaks has a new wife, younger bird of some description
     # A woman went missing recently from her apartment, a rabbit called Olivia
+    "(6 months later:)"
+    "(The news shows the story of a missing person's case, a rabbit called Olivia from down town)"
+    "(Her body was found with several botched plastic surgeries...)"
+    "(Ear shortening, and foot webbing being only two of them...)"
+    "(She was 20 years old...)"
+    "(The news then switches to a happy story)"
+    "(Of Beaks running for Mayor with his new wife, Tweetsy!)"
+    "(A beautiful yellow canary whos modelling career is taking the world by storm!)"
+    "(And Beaks' heart <3 )"
+    "(The news wishes them a long and happy life)"
+    "(He deserves it after the tragic death of his previous wife)"
 
+
+# Ending line
+    "(The End)"
+    "(ENDING 4 of 4: You lied about seeing things and didn't get help. Now you will forever see the reality of the situation you are in.
+    That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
+    "(You didn't even solve the case... Beaks is free, and every several years when his current wife gets to the horrifyingly old age of....)"
+    "(*cough* anything over 25...)"
+    "(He'll have her killed, and remarry his newest mistress)"
+    "(Rinse and repeat.)"
+    "(Rinse and repeat.)"
+    "(Rinse and repeat.)"
+    "(For you personally, seeing 'the hands' and the sudden flashes in your mind of actually being inside of giant plastic doll houses is
+    terribly unnerving and out of your control, but you'll probably get used to it eventually...)"
+    "(Probably...)"
     # This ends the game.
     return
