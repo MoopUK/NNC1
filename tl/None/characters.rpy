@@ -317,7 +317,3 @@ image boot boot:
 image doorlock doorlock:
     "doorlock"
     zoom 0.65
-
-image mace mace:
-    "mace"
-    zoom 0.6
