@@ -731,96 +731,194 @@ label funeral:
 
     scene beaksmansion
     "(Their predictions were correct. They did not hold back on the buffet!)"
+    scene beaksmansion
+    show nun n at right
+    show snun happy at left
     hubby "By the gods! By the gods!"
     "(Strudle is practically salivating)"
+    scene beaksmansion
+    show nun angry at right
+    show snun happy at left
     nun "Hey, at least try to look like you're grieving!"
     hubby "I've never seen this many types of tomatoes before! I don't even like tomatoes but I have to TRY. THEM. ALL!"
     "(Strudle runs to the buffet and starts to fill his plate whiles Nairda looks at the other guests in the vicinity apologetically)"
+    scene beaksmansion
+    show nun shy at right
+    show snun happy at left
     nun "He's truely crushed by Mrs Beaks death he... eats his feelings is all..."
     "(Nairda hopes that is enough to stop the judgemental stares towards his husband, now seven deep into the tomato dishes)"
+    scene beaksmansion
+    show nun n at right
+    show beaks n at left
     "(Mr Beaks comes in, looks around, and starts to dab his eyes with a clean pocket square)"
+    scene beaksmansion
+    show nun sad at right
+    show beaks n at left
     nun "Mr Beaks, I'm so sorry for your loss."
     "(Beaks grabs Nairda's hands and shakes them vigourously)"
     "(Nairda has no idea why Beak's hands feel clammy)"
+    scene beaksmansion
+    show nun shy at right
+    show beaks happy at left
     beaks "Thank you Nairda, who's here at the moment?"
     "(Beaks lets go of Nairda's hands and looks around some more, making a mental note of the guests)"
+    scene beaksmansion
+    show nun confused at right
+    show beaks n at left
     nun "Ah, I'm not sure. I haven't introduced myself yet."
+    scene beaksmansion
+    show nun n at right
+    show beaks sad at left
     "(Beaks looks disappointed with the turn out)"
     beaks "Is the mayor?"
+    scene beaksmansion
+    show nun confused at right
+    show beaks happy at left
     "(Beaks spots the mayor in the corner, and goes over for a photo opportunity)"
 
 # 2. Nun has to go wash his hands and finds the husband has been
 # throwing all of his wife's stuff into boxes to bin. When husband says Nun would understand
 # wanting to have a fresh start asap after tradjedy, Nun mentions when his partner died he never threw anything
 # out of theirs in the office.
-
+    scene beaksmansion
+    show nun confused at right
+    show snun happy at left
     "(Strudle comes back to Nairda, plate filled with the most fanciful of buffet treats)"
+    scene beaksmansion
+    show nun sad at right
+    show beaks n at left
     hubby "Are you ok? You look like you've seen a ghost."
     "(The damp, almost greasy handprints of Beaks still lingers on Nairda's hands)"
     nun "He did a two hander... BOTH hands, wrapped around BOTH of my hands!"
     nun "And he was... moist?!? Like all of his sweat is released out of his flipper fins!"
+    scene beaksmansion
+    show nun n at right
+    show beaks n at left
     "(Nairda turns left and right to find any direction that'll possibly have a sink to wash them)"
     "(Hands still frozen in place mid-air as if moving them will dirty them up more)"
+    scene beaksmansion
+    show nun confused at right
+    show beaks n at left
     nun "I'm going to the bathroom, there has to be one upstairs!"
     nun "Cover for me... I need to clean this off..."
     "(Strudle nods acceptingly, mouth full of several types of tomatoes and squares of cheese"
+    scene beaksmansion
+    show nun n at right
+    show beaks shy at left
     hubby "Uh-hum... can do... uhm... go clean"
 
 # Hand clean bathroom / wife stuff in boxes
+    scene beaksmansion
     "(Heading upstairs, Nairda goes into the master bedroom after noticing it has an En Suite)"
     "(Boxes packed with Mrs Beaks' stuff is piled into the corner)"
     "(Completely erasing her memory from every part of the bedroom)"
+    scene beaksmansion
+    show nun confused
     nun "This is the polar opposite to downstairs..."
     "(Nairda whispers to himself, whiles going into the En suite to wash his hands)"
+    scene beaksmansion
+    show nun happy
     "(The water feels fantastic, and Beaks even buys the fancy antibacterial soap)"
     "(Nairda is lost in thought whiles thoroughly cleaning his hands and wrists to a godly level)"
+    scene beaksmansion
+    show nun confused at right
+    show beaks angry at left
     beaks "What are you doing in here?"
     nun "AH!"
     beaks "The guest bathrooms are downstairs..."
+    scene beaksmansion
+    show nun sad at right
+    show beaks angry at left
     nun "Mr Beaks! I'm sorry, I was looking for a bathroom and thought it'd be logical for one to be upstairs"
     beaks "Well, the guest bathrooms are downstairs so let me show you to those..."
     "(Beaks gestures to the bedroom doorway, waiting for Nairda to follow)"
     nun "Of course, thank you."
+    scene beaksmansion
+    show nun confused at right
+    show beaks angry at left
     "(Nairda stops in the bedroom and looks at the boxes of Mrs Beaks' items again)"
     nun "Why did you pack up all of her stuff?"
+    scene beaksmansion
+    show nun confused at right
+    show beaks n at left
     beaks "Well you know, after a death it's best to get rid of their stuff so you can have a fresh start"
     beaks "You get it, right?"
     "(Nairda looks up confused)"
     nun "But it's memories? I haven't even moved my detective partner's stuff out of the office and he passed over a year ago"
     "(Beaks looks back at Nairda)"
+    scene beaksmansion
+    show nun confused at right
+    show beaks angry at left
     beaks "I guess people mourn in different ways. Let me show you to the bathrooms downstairs."
     nun "Ah, yes. Of course. My apologies!"
+    scene beaksmansion
+    show nun n at right
+    show beaks n at left
     "(The two of them head downstairs and Beaks leads Nairda to not one but two separate bathrooms on the ground floor)"
     beaks "Use these next time."
+    scene beaksmansion
+    show nun n at right
+    show beaks happy at left
     "(More guests to the wake walk in, peaking Beaks' interest)"
     beaks "Now if you'll excuse me!"
+    scene beaksmansion
     "(He quickly waddles over and leads the new guests to the lounge)"
     "(Strudle, halfway through a second plate of food, comes over to Nairda)"
+    scene beaksmansion
+    show nun n at right
+    show snun happy at left
     hubby "Sooo.... Beaks saw you go upstairs ey?"
+    scene beaksmansion
+    show nun sad at right
+    show snun n at left
     nun "It was very awkward, but it was worth it for the soap alone! I feel like I won't need to wash my hands for another year!"
     "(Nairda is rubbing his hands, whispering to himself)"
+    scene beaksmansion
+    show nun happy at right
+    show snun happy at left
     nun "So clean, so smooth..."
 
 # 3. The doorway to the house has unopened letters and a perfume smelling parcel that has a denied acceptance/delivery
 # label on it.
 # Nun thinks maybe husband had a mistress, noted the address and name
     "(Strudle finishes the plate and lays it onto a cart)"
+    scene beaksmansion
+    show nun n at right
+    show snun n at left
     hubby "Do you think we need to be here much longer? It feels more like a photo shoot for the elites than a funeral wake"
     nun "I think we can go, he's not going to notice us unless I go upstairs again to use more of his hand soap"
+    scene beaksmansion
+    show nun happy at right
+    show snun happy at left
     "(Strudle tries to stifle a laugh, and they walk towards the door)"
+    scene beaksmansion
     "(At the front door, letters are piled up along with a nice smelling box)"
     "(It wasn't for this address and has a random woman's name on it)"
     "(Along with a stamp saying it was a refused delivery and returned to sender)"
+    scene beaksmansion
+    show nun confused at right
+    show snun n at left
     nun "Does this smell like perfume to you?"
     "(Nairda holds the parcel to Strudles nose, causing Strudle to panic in a hushed whisper)"
+    scene beaksmansion
+    show nun confused at right
+    show snun angry at left
     hubby "Wha?! What are you doing? You can't go through someone elses mail!"
     nun "It's not for either of the Beaks though... It's for an Olivia at..."
+    scene beaksmansion
+    show nun n at right
+    show snun angry at left
     "(Nairda makes a mental note of the name and address)"
     nun "Something isn't right here... Did Beaks have a mistress?"
+    scene beaksmansion
+    show nun n at right
+    show snun n at left
     hubby "Can we just go before he sees us snooping?"
     nun "Yeah... we should go..."
 
     # CHANGE TO ROADS AND FANCY HOUSES
+
+    scene fancystreet
     "(The drive home is rather long, the Beaks Mansion is so deep into the richest part of town that you get an
     uncanny valley vibe from the sheer size of the plots and oddly laid out housing designs)"
     "(After longer than they wished to have needed to drive to finally get out of there)"

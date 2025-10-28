@@ -39,6 +39,9 @@
 # beaksmansion (funeral buffet)
 # https://www.pexels.com/photo/exquisite-buffet-spread-in-rustic-indoor-setting-34357891/
 
+# fancy street
+# https://www.pexels.com/photo/a-red-ferrari-car-parked-on-the-street-in-front-of-the-hotel-10273208/
+
 
 
 
