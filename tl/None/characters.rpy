@@ -1,19 +1,12 @@
-# Carbon copy of NNC0 characters.rpy, with edits/extras.
-# Using the same character models/images in every Nairda Nun game,
-# so it makes sense not to redraw them all for the second game/this one.
-
+# Characters premade from Chapter 00, and others added for this story
 # Script for all characters.
+
 # Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
-default correct = 0
-# How to put yes or no answer into game:
-#            $ correct = correct +1  #GOOD choice!
-#            play sound "audio/yes.mp3"
+default truth = 0
+default solved = 0
 
-#            $ correct = correct -1  #BAD choice!
-#            play sound "audio/no.mp3"
-
-# Here you can give the info and colour of name tag for each character
+# Character List
 
 # Narrator / The Game Developer (fourth-wall breaking character)
 define GameDev = Character("Game Dev")
@@ -21,23 +14,35 @@ define GameDev = Character("Game Dev")
 # Main Character, Nairda Nun
 define nun = Character("Nairda Nun", color="#99C68E") #nun, frog green
 
-# Husband of Nun - placeholder until physical character model received for editing
+# Main Characters, Beaks (man with missing wife)
+define beaks = Character("Beaks", color="FFFF00")
+
+# Side Character, Beaks Ex-Mistress
+define olive = Character("Olivia", color="808000") # Olive colour
+
+# Main Characters, Molly Stone (Psychic)
+define molly = Character("Molly Stone", color="FF69B4")
+
+# Side Character, Institute nurse
+define nurse = Character("Institute Nurse", color="49535A") # Dark grey colour
+
+# Main Character, Husband of Nun
 define hubby = Character("Strudle", color="#FF0000")#Red
 
-# Late Police Detective Partner of Nun
-define np = Character("Nun's Partner", color="#99C55E")
+# Sice Character, Fry the Pizza Guy
+define fry = Character("Fry", color="#DBA87F") #Pizza crust colour
 
 # Apartment neighbours
 define t = Character("Tony", color="#FF0000")#Red
 define e = Character("Ezekiel", color="#FFE4E1")#MistRose
 
 # Misc characters
-define a = Character("Alice", color="#33FFCC")#light blue # Museum Owner?
-define d = Character("Detective", color="#FFCC33")#yellow # Angry police detective
+define d = Character("Detective Harry Hare", color="#FFCC33")#yellow # Angry police detective
 define mor = Character("Mortician", color="#800000")#maroon # Mortician
-define r = Character("Receptionist", color="AABBCC")
-define drk = Character("Dr Krieger", color="FFCCAA")
-define ch = Character("Chief", color="FFFFFF")
+define r = Character("Receptionist", color="AABBCC") # Psychologist's receptionist and wife
+define drk = Character("Dr Krieger", color="FFCCAA") # Psychologist
+define chief = Character("Chief", color="135DD8") # Police blue, chief of police
+define np = Character("Nun's Partner", color="#99C55E") # Late Police Detective Partner of Nun
 
 # images for characters and facial expressions
 # General expressions:
@@ -47,6 +52,15 @@ define ch = Character("Chief", color="FFFFFF")
 # - angry
 # - confused
 # - embarrassed/shy
+# EXTRA: For fourth-wall breaking, some models will have hand variants
+
+# Hand (fourth wall breaker)
+image hand r:
+    "righthand1"
+    zoom 0.5
+image tester hand:
+    "testerhand"
+    zoom 0.5
 
 # Nun (Main Character)
 image nun n:
@@ -67,8 +81,47 @@ image nun confused:
 image nun shy:
     "nunshy"
     zoom 0.5
+# Beaks (man with missing wife)
+image beaks n:
+    "beaks"
+    zoom 0.5
+image beaks sad:
+    "placeholder"
+    zoom 0.5
+image beaks happy:
+    "placeholder"
+    zoom 0.5
+image beaks angry:
+    "placeholder"
+    zoom 0.5
+image beaks confused:
+    "placeholder"
+    zoom 0.5
+image beaks shy:
+    "placeholder"
+    zoom 0.5
 
-# Strudle Nun (Nairda's husband) PLACEHOLDERS REPLACEMENT NEEDED
+# Molly Stone (psychic)
+image molly n:
+    "placeholder"
+    zoom 0.5
+image molly sad:
+    "placeholder"
+    zoom 0.5
+image molly happy:
+    "placeholder"
+    zoom 0.5
+image molly angry:
+    "placeholder"
+    zoom 0.5
+image molly confused:
+    "placeholder"
+    zoom 0.5
+image molly shy:
+    "placeholder"
+    zoom 0.5
+
+# Strudle Nun (Nairda's husband)
 image snun n:
     "snunneutral"
     zoom 0.2
@@ -88,7 +141,7 @@ image snun shy:
     "snunshy"
     zoom 0.2
 
-# Dr Krieger (Therapist) PLACEHOLDERS REPLACEMENT NEEDED
+# Dr Krieger (Therapist)
 image drk n:
     "drkn"
     zoom 0.5
@@ -135,14 +188,14 @@ image tony n:
 image tony sad:
     "tonysad"
     zoom 0.5
-image tony happy: #NEEDED
-    "tonyshy"
+image tony happy:
+    "tonyhappy"
     zoom 0.5
 image tony angry:
     "tonyangry"
     zoom 0.5
-image tony confused: #NEEDED
-    "tonyshy"
+image tony confused:
+    "tonyconfused"
     zoom 0.5
 image tony shy:
     "tonyshy"
@@ -208,7 +261,7 @@ image chief shy:
     "placeholder"
     zoom 0.5
 
-# Harry Hare (arrogant police detective) PLACEHOLDER NEEDS REPLACING
+# Harry Hare (arrogant police detective)
 image hare n:
     "haren"
     zoom 0.5
@@ -228,24 +281,24 @@ image hare shy:
     "hareshy"
     zoom 0.5
 
-# Bruce (Nairda's nemesis at therapy) placeholder, might be entirely unneeded, might not show Bruce
-image bruce n:
-    "nunneutral"
+# Fry (Pizza guy)
+image fry n:
+    "fryn"
     zoom 0.5
-image bruce sad:
-    "nunsad"
+image fry sad:
+    "frysad"
     zoom 0.5
-image bruce happy:
-    "nunhappy"
+image fry happy:
+    "fryhappy"
     zoom 0.5
-image bruce angry:
-    "nunangry"
+image fry angry:
+    "fryangry"
     zoom 0.5
-image bruce confused:
-    "nunneutral"
+image fry confused:
+    "fryconfused"
     zoom 0.5
-image bruce shy:
-    "nunshy"
+image fry shy:
+    "fryshy"
     zoom 0.5
 
 # MISC ITEMS - All game scenes are in 1280 x 720, resize accordingly
@@ -268,6 +321,3 @@ image doorlock doorlock:
 image mace mace:
     "mace"
     zoom 0.6
-
-image body body:
-    "body"
