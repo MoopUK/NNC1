@@ -103,22 +103,22 @@ image beaks shy:
 
 # Molly Stone (psychic)
 image molly n:
-    "placeholder"
+    "mollystone"
     zoom 0.5
 image molly sad:
-    "placeholder"
+    "mollystone"
     zoom 0.5
 image molly happy:
-    "placeholder"
+    "mollystone"
     zoom 0.5
 image molly angry:
-    "placeholder"
+    "mollystone"
     zoom 0.5
 image molly confused:
-    "placeholder"
+    "mollystone"
     zoom 0.5
 image molly shy:
-    "placeholder"
+    "mollystone"
     zoom 0.5
 
 # Strudle Nun (Nairda's husband)

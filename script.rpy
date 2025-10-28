@@ -922,6 +922,9 @@ label funeral:
     "(The drive home is rather long, the Beaks Mansion is so deep into the richest part of town that you get an
     uncanny valley vibe from the sheer size of the plots and oddly laid out housing designs)"
     "(After longer than they wished to have needed to drive to finally get out of there)"
+    scene apartmentdoor
+    show nun n at right
+    show snun n at left
     "(Both Strudle and Nairda get back home, change into their pajamas, and watch a few episodes of their favourite
     comfort show before having an early night)"
 
