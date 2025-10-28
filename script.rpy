@@ -253,7 +253,7 @@ label GameStart:
     scene messhall
     show beaks n at left
     show hare happy at right
-    d "We've got everything covered! We're searching the whole town! I guarantee she'll be home by tomorrow!"
+    d "We've got everything covered! We're searching the whole town! I guarantee she'll be safe at home by the 'morrow!"
 
     scene messhall
     "(Nairda goes back to his husband)"
@@ -282,7 +282,7 @@ label GameStart:
     "(With the conference coming to a close)"
     scene stairs
     "(Strudle grabs Nairda's hand and they go back to the car"
-    "Grabbing a take away and heading home for the evening)"
+    "(Grabbing a take away and heading home for the evening)"
     "(To enjoy fly pie for tea)"
 
     #ENG BGM "Cafe"
@@ -1022,13 +1022,14 @@ label helpher:
     "(Nairda stands up from the sofa)"
     nun "We'll get back to you! If you need anything here's my card and number! Do NOT hesitate to call!"
     "(Nairda and Strudle leave the apartment block and get back into the car)"
-    scene apartmentblock
+    scene apartmenthalls
     nun "We need to make a plan to keep her safe and have him admit to any crimes to do with his wife's death..."
     nun "And I think I need to talk to Molly Stone again to do it!"
 
 # SCENE 09 - Back to the institute
 # - get Molly to agree to pretending to be psychic and finding Molly's body in a similar place as Beaks' wife
 # -
+    scene hospital
     "(The Institute: A small brown building, with gold patterns painted meticulously on the roof)"
     "(If you didn't have claustrophobia before, you most certainly do now.)"
     "(Nobody wants to be in the institution.)"
@@ -1060,15 +1061,14 @@ label which_end:
         jump lienotsolved_end
 
 
-# SCENE 10 - One of the endings?
-
-# your life/ but at least you solved the case (maybe visit Molly)
+# SCENE 10 - The endings
 
 label truthsolved_end:
     # Nairda tells the truth about seeing things, and the therapist helps with medication
     # The hands slowly disappear from existance
     # solved same way as other
     #"truth solved"
+    "(A few days have passed)"
     "(Everyone goes down the hill towards the place where Mrs Beaks was found)"
     molly "Ohhhh it's getting stronger! I think her name is... Olive tree? That can't be right..."
     "(Molly holds her head then points one finger towards the bottom of the hill)"
@@ -1099,7 +1099,7 @@ label truthsolved_end:
     "(a...)"
     "(HILL!)"
     chief "FREEZE!"
-    "(The chief makes a run for Beaks, tackling him to the ground, and arresting him for the murder of Beaks,
+    "(The chief makes a run for Beaks, tackling him to the ground, and arresting him for the murder of Mrs Beaks,
     and as a suspected murderer in two other cold cases of murdered women under the age of 30 in their respected animal years.)"
     "(Once he was safely in the police car and out of view, Nairda went over to Olivia's body)"
     nun "You did amazingly, Olivia, it's safe to get up now"
@@ -1133,15 +1133,22 @@ label truthsolved_end:
     "(Everything is as it should be.)"
 
     # Ending line
+    scene screenstart
     "(The End)"
     "(ENDING 1 of 4: You told the truth about seeing things and got help. You will no longer see the reality of the situation you are in.
     That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
     "(This is a good thing though, right? Ignorance is bliss! And those sudden flashes of reality were terribly unnerving so this really is for the best)"
     "(And hey! You solved the case! Beaks is arrested! Good job!)"
-
+    return
 
 label truthnotsolved_end:
     #"truth not solved"
+    "(Molly refuses to help you)"
+    "(You can't get her out of the Institute, as she would rather die than take what the orderlies offer her)"
+    "(You only show up when you want something)"
+    "(And she remembers how you treated her last time)"
+    "(Nairda leaves empty handed, without the help of Molly Stone there is no way to prove Beaks is guilty)"
+
     # Nairda tells the truth about seeing things, and the therapist helps with medication
     # The hands slowly disappear from existance
     scene emptygym
@@ -1181,6 +1188,7 @@ label truthnotsolved_end:
 
 
 # Ending line
+    scene screenstart
     "(The End)"
     "(ENDING 2 of 4: You told the truth about seeing things and got help. You will no longer see the reality of the situation you are in.
     That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
@@ -1191,10 +1199,12 @@ label truthnotsolved_end:
     "(Rinse and repeat.)"
     "(Rinse and repeat.)"
     "(Rinse and repeat.)"
+    return
 
 
 label liesolved_end:
     # lie solved
+    "(A few days have passed)"
     "(Everyone goes down the hill towards the place where Mrs Beaks was found)"
     molly "Ohhhh it's getting stronger! I think her name is... Olive tree? That can't be right..."
     "(Molly holds her head then points one finger towards the bottom of the hill)"
@@ -1225,7 +1235,7 @@ label liesolved_end:
     "(a...)"
     "(HILL!)"
     chief "FREEZE!"
-    "(The chief makes a run for Beaks, tackling him to the ground, and arresting him for the murder of Beaks,
+    "(The chief makes a run for Beaks, tackling him to the ground, and arresting him for the murder of Mrs Beaks,
     and as a suspected murderer in two other cold cases of murdered women under the age of 30 in their respected animal years.)"
     "(Once he was safely in the police car and out of view, Nairda went over to Olivia's body)"
     nun "You did amazingly, Olivia, it's safe to get up now"
@@ -1258,6 +1268,7 @@ label liesolved_end:
     hubby "I love you too, Nairda!"
 
     # Ending line
+    scene screenstart
     "(The End)"
     "(ENDING 3 of 4: You lied about seeing things and didn't get help. Now you will forever see the reality of the situation you are in.
     That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
@@ -1265,9 +1276,15 @@ label liesolved_end:
     "(For you personally, seeing 'the hands' and the sudden flashes in your mind of actually being inside of giant plastic doll houses is
     terribly unnerving and out of your control, but you'll probably get used to it eventually...)"
     "(Probably...)"
+    return
 
 label lienotsolved_end:
     # "lied and not solved"
+    "(Molly refuses to help you)"
+    "(You can't get her out of the Institute, as she would rather die than take what the orderlies offer her)"
+    "(You only show up when you want something)"
+    "(And she remembers how you treated her last time)"
+    "(Nairda leaves empty handed, without the help of Molly Stone there is no way to prove Beaks is guilty)"
 # - Lies about visions && not solved the case
 # - You lie out of fear and don't take meds to stop it & you can see you're in a simulation type situation for the rest of
     scene apartmentdoor
@@ -1286,7 +1303,6 @@ label lienotsolved_end:
     "(Strudle smiles)"
     hubby "I love you too, Nairda!"
 
-
     # 6 months later:
     # Beaks has a new wife, younger bird of some description
     # A woman went missing recently from her apartment, a rabbit called Olivia
@@ -1302,8 +1318,8 @@ label lienotsolved_end:
     "(The news wishes them a long and happy life)"
     "(He deserves it after the tragic death of his previous wife)"
 
-
 # Ending line
+    scene screenstart
     "(The End)"
     "(ENDING 4 of 4: You lied about seeing things and didn't get help. Now you will forever see the reality of the situation you are in.
     That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
