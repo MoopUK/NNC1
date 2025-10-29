@@ -33,16 +33,13 @@ define hubby = Character("Strudle", color="#FF0000")#Red
 define fry = Character("Fry", color="#DBA87F") #Pizza crust colour
 
 # Apartment neighbours
-define t = Character("Tony", color="#FF0000")#Red
-define e = Character("Ezekiel", color="#FFE4E1")#MistRose
+define tony = Character("Tony", color="#FF0000")#Red
 
 # Misc characters
 define d = Character("Detective Harry Hare", color="#FFCC33")#yellow # Angry police detective
 define mor = Character("Mortician", color="#800000")#maroon # Mortician
-define r = Character("Receptionist", color="AABBCC") # Psychologist's receptionist and wife
 define drk = Character("Dr Krieger", color="FFCCAA") # Psychologist
 define chief = Character("Chief", color="135DD8") # Police blue, chief of police
-define np = Character("Nun's Partner", color="#99C55E") # Late Police Detective Partner of Nun
 
 # images for characters and facial expressions
 # General expressions:
@@ -81,25 +78,28 @@ image nun confused:
 image nun shy:
     "nunshy"
     zoom 0.5
+# EXTRA HANDS
+image nun hand1:
+    "nunhand40percent"
 
 # Olivia
 image olive n:
-    "olive1"
+    "oliven"
     zoom 0.5
 image olive sad:
-    "olive1"
+    "olivesad"
     zoom 0.5
 image olive happy:
-    "olive1"
+    "olivehappy"
     zoom 0.5
 image olive angry:
-    "olive1"
+    "oliveangry"
     zoom 0.5
 image olive confused:
-    "olive1"
+    "oliveconfused"
     zoom 0.5
 image olive shy:
-    "olive1"
+    "oliveshy"
     zoom 0.5
 
 # Beaks (man with missing wife)
@@ -124,22 +124,27 @@ image beaks shy:
 
 # Molly Stone (psychic)
 image molly n:
-    "mollystone"
+    "mollyn"
     zoom 0.5
 image molly sad:
-    "mollystone"
+    "mollysad"
     zoom 0.5
 image molly happy:
     "mollystone"
     zoom 0.5
 image molly angry:
-    "mollystone"
+    "mollyangry"
     zoom 0.5
 image molly confused:
-    "mollystone"
+    "mollyconfused"
     zoom 0.5
 image molly shy:
-    "mollystone"
+    "mollyshy"
+    zoom 0.5
+
+# Institute Nurse (only need neutral face)
+image nurse n:
+    "nursen"
     zoom 0.5
 
 # Strudle Nun (Nairda's husband)
@@ -162,6 +167,11 @@ image snun shy:
     "snunshy"
     zoom 0.2
 
+# EXTRA HANDS
+image snun hand1:
+    "snunhandtest"
+    zoom 0.8
+
 # Dr Krieger (Therapist)
 image drk n:
     "drkn"
@@ -180,26 +190,6 @@ image drk confused:
     zoom 0.5
 image drk shy:
     "drkshy"
-    zoom 0.5
-
-# Therapy Receptionist
-image rec n:
-    "receptionistn"
-    zoom 0.5
-image rec sad:
-    "receptionistsad"
-    zoom 0.5
-image rec happy:
-    "receptionisthappy"
-    zoom 0.5
-image rec angry:
-    "receptionistangry"
-    zoom 0.5
-image rec confused:
-    "receptionistconfused"
-    zoom 0.5
-image rec shy:
-    "receptionistshy"
     zoom 0.5
 
 # Tony (apartment neighbour)
@@ -222,26 +212,6 @@ image tony shy:
     "tonyshy"
     zoom 0.5
 
-# Ezekiel (Tony's nemesis and vice versa at apartments) PLACEHOLDERS REPLACEMENTS NEEDED
-image ez n:
-    "tonyneutral"
-    zoom 0.5
-image ez sad:
-    "nunsad"
-    zoom 0.5
-image ez happy:
-    "nunhappy"
-    zoom 0.5
-image ez angry:
-    "nunangry"
-    zoom 0.5
-image ez confused:
-    "nunneutral"
-    zoom 0.5
-image ez shy:
-    "nunshy"
-    zoom 0.5
-
 # Dr Wolfe (Mortician)
 image drwolfe n:
     "drwolfeneutral"
@@ -262,24 +232,24 @@ image drwolfe shy:
     "drwolfeshy"
     zoom 0.5
 
-# Chief (Police chief) placeholder, might be entirely unneeded, might not show chief
+# Chief (Police chief)
 image chief n:
-    "chief"
+    "chiefn"
     zoom 0.5
 image chief sad:
-    "chief"
+    "chiefsad"
     zoom 0.5
 image chief happy:
-    "chief"
+    "chiefhappy"
     zoom 0.5
 image chief angry:
-    "chief"
+    "chiefangry"
     zoom 0.5
 image chief confused:
-    "chief"
+    "chiefconfused"
     zoom 0.5
 image chief shy:
-    "chief"
+    "chiefshy"
     zoom 0.5
 
 # Harry Hare (arrogant police detective)
@@ -323,18 +293,6 @@ image fry shy:
     zoom 0.5
 
 # MISC ITEMS - All game scenes are in 1280 x 720, resize accordingly
-image gun gun:
-    "gun"
-    zoom 0.5
-
-image opencab opencab:
-    "opencabinet"
-    zoom 0.5
-
 image boot boot:
     "boot"
     zoom 0.5
-
-image doorlock doorlock:
-    "doorlock"
-    zoom 0.65

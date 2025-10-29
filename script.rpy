@@ -6,15 +6,6 @@
 # proportions and style similar to Sylvanian Families.
 
 # -----------------------------------------------------------------------------
-## To Do List / Needs
-
-# - Arm photo and edit, opaque, to use for showing a human is holding the characters
-# at random intervals.
-# - Audio of human in "real world" for different immersion / fourth wall
-# breaking.
-
-# -----------------------------------------------------------------------------
-
 # Game Contents:
 
 # SCENE 00 - Introduction
@@ -89,13 +80,8 @@
 # Lie and not solve case
 
 # Game End.
+
 # -----------------------------------------------------------------------------
-
-# Movie / Cutscenes (where needed) currently not being used
-image officevideo1 movie = Movie(play="officevideo1.webm")
-init:
-    image movie = Movie(size=(1280, 720), xalign=0.5, yalign=0.5)
-
 # The game starts here
 label start:
 # Disclaimer screen
@@ -117,28 +103,28 @@ label start:
 label Lore:
     scene apartmentdoor
     show tony n
-    t "Am I on? Ok, just read the teleprompter? Ok!"
-    t "Welcome to... Lore?"
-    t "In our world, you don't wear shoes. Shoes hide your footprints, so nobody knows your species,
+    tony "Am I on? Ok, just read the teleprompter? Ok!"
+    tony "Welcome to... Lore?"
+    tony "In our world, you don't wear shoes. Shoes hide your footprints, so nobody knows your species,
     and only criminals would purposefully hide that!"
-    t "Have you ever heard of someone running for the hills?"
-    t "Well it comes from an old law that has never been rectified!"
-    t "If you stand on a hill, you're above the law, and thus, you can not be
+    tony "Have you ever heard of someone running for the hills?"
+    tony "Well it comes from an old law that has never been rectified!"
+    tony "If you stand on a hill, you're above the law, and thus, you can not be
     charged with any crime whiles on that hill."
-    t "Crazy I know!"
+    tony "Crazy I know!"
     scene apartmentdoor
     show tony confused
-    t "I'm not sure why they need to know this? It's common knowledge isn't it?"
+    tony "I'm not sure why they need to know this? It's common knowledge isn't it?"
     "(Tony see's the cameraman pointing to the teleprompter and mouthing to please just read from that)"
     scene apartmentdoor
     show tony n
-    t "Ah, ok! and last but not least you should never..."
+    tony "Ah, ok! and last but not least you should never..."
     play sound "audio/toiletnoise.mp3"
     "(a toilet flushes above)"
     scene apartmentdoor
     show tony angry
-    t "Dammit Ezekiel! I'm trying to!"
-    t "I'm sorry everyone, I have to stop the water!"
+    tony "Dammit Ezekiel! I'm trying to!"
+    tony "I'm sorry everyone, I have to stop the water!"
     stop sound
     scene apartmentdoor
     "(Tony runs back into his apartment, you hear a broom hitting on the ceiling
@@ -161,7 +147,6 @@ label GameStart:
 # 1. Nun having a normal day of work. Case of a missing wife, gone 72 hours, husband
 # is sad and wanting any information about his wife.
     scene apartmentdoor
-    #BGM
     play music "audio/cafe.mp3"
     "(Nairda Nun received a phone call about a missing person's case)"
     "(A powerful man's wife hasn't been seen in the past 72 hours)"
@@ -289,7 +274,7 @@ label GameStart:
     scene morning3
     "(Molly's scream echoes out in the distance)"
 
-
+# POLICE AT THE SCENE
     scene morning4
     stop music
     "(A short while later)"
@@ -338,7 +323,6 @@ label GameStart:
     "(The sound of the Chief shouting to Beaks can be heard in the distance)"
     "(Something about not tampering with possible evidence, mixed with being sorry for his loss)"
     "(Nairda and Strudle head back to their car and make way to the institution)"
-
 
 
 # SCENE 3 - Institution Questioning
@@ -491,7 +475,6 @@ label GameStart:
     molly "Welcome to the club, Nairda Nun."
 
 # 6. His vision goes to black and he's suddenly back to the car.
-
     scene blink
     "(Nairda's vision turns to black)"
     scene stairs
@@ -637,9 +620,10 @@ label pizzatime:
 
         "The pizza looked like it was made of clay for a minute, like the entire scene was a giant children's doll house":
             scene pizza
-            show nun confused at right
-            show snun sad
-            show fry confused at left
+#            show nun confused at right
+            show nun hand1 at left
+#            show snun sad
+#            show fry confused at left
             $ truth = truth +1  #Truth choice!
             play sound "audio/yes.mp3"
             "(Suddenly you are unable to move)"
@@ -648,14 +632,17 @@ label pizzatime:
             "(The world around you turns to plastic)"
             scene pizzahand3
             "(You no longer feel your body the same)"
+            scene pizzahand4
             "(It is as though you're covered in felt, your limbs a solid resin)"
             "(Everyone is silent and motionless around you)"
-            scene pizzahand4
+            scene pizzahand5
             "(There's a weird pulling sensation)"
             "(You can not move)"
-            scene pizzahand5
+            scene pizzahand6
             "(You see them)"
+            scene pizzahand7
             "(YOU)"
+            scene pizzahand8
             "(SEE)"
             scene blink
             hubby "Nairda?"
@@ -697,6 +684,7 @@ label pizzatime:
             scene apartmentdoor
             show nun sad at right
             show snun sad at left
+#            show snun hand1 at left
             nun "I'm not sure what's wrong with me, I can't even begin to explain it"
             hubby "Should we make an appointment with Dr Krieger? She might know what's wrong?"
             scene apartmentdoor

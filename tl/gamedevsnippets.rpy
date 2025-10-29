@@ -10,6 +10,11 @@
 #    words and it's hidden"
 #    hide example
 
+# Movie / Cutscenes (where needed) currently not being used
+# image officevideo1 movie = Movie(play="officevideo1.webm")
+# init:
+#    image movie = Movie(size=(1280, 720), xalign=0.5, yalign=0.5)
+
 # Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
 # default correct = 0
