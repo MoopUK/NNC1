@@ -81,24 +81,45 @@ image nun confused:
 image nun shy:
     "nunshy"
     zoom 0.5
+
+# Olivia
+image olive n:
+    "olive1"
+    zoom 0.5
+image olive sad:
+    "olive1"
+    zoom 0.5
+image olive happy:
+    "olive1"
+    zoom 0.5
+image olive angry:
+    "olive1"
+    zoom 0.5
+image olive confused:
+    "olive1"
+    zoom 0.5
+image olive shy:
+    "olive1"
+    zoom 0.5
+
 # Beaks (man with missing wife)
 image beaks n:
     "beaks"
     zoom 0.5
 image beaks sad:
-    "placeholder"
+    "beaks"
     zoom 0.5
 image beaks happy:
-    "placeholder"
+    "beaks"
     zoom 0.5
 image beaks angry:
-    "placeholder"
+    "beaks"
     zoom 0.5
 image beaks confused:
-    "placeholder"
+    "beaks"
     zoom 0.5
 image beaks shy:
-    "placeholder"
+    "beaks"
     zoom 0.5
 
 # Molly Stone (psychic)
@@ -243,22 +264,22 @@ image drwolfe shy:
 
 # Chief (Police chief) placeholder, might be entirely unneeded, might not show chief
 image chief n:
-    "placeholder"
+    "chief"
     zoom 0.5
 image chief sad:
-    "placeholder"
+    "chief"
     zoom 0.5
 image chief happy:
-    "placeholder"
+    "chief"
     zoom 0.5
 image chief angry:
-    "placeholder"
+    "chief"
     zoom 0.5
 image chief confused:
-    "placeholder"
+    "chief"
     zoom 0.5
 image chief shy:
-    "placeholder"
+    "chief"
     zoom 0.5
 
 # Harry Hare (arrogant police detective)

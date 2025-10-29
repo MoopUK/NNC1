@@ -487,11 +487,12 @@ label GameStart:
     nun "What's...?"
     scene hospital
     "(Rubbing his eyes, he takes another look towards Molly Stone)"
-    show molly happy
+    scene reality2
     molly "Welcome to the club, Nairda Nun."
 
 # 6. His vision goes to black and he's suddenly back to the car.
 
+    scene blink
     "(Nairda's vision turns to black)"
     scene stairs
     show nun n at right
@@ -643,17 +644,20 @@ label pizzatime:
             play sound "audio/yes.mp3"
             "(Suddenly you are unable to move)"
             nun "I can't..."
-            scene pizza2
+            scene pizzahand2
             "(The world around you turns to plastic)"
+            scene pizzahand3
             "(You no longer feel your body the same)"
             "(It is as though you're covered in felt, your limbs a solid resin)"
             "(Everyone is silent and motionless around you)"
+            scene pizzahand4
             "(There's a weird pulling sensation)"
             "(You can not move)"
+            scene pizzahand5
             "(You see them)"
             "(YOU)"
             "(SEE)"
-            scene pizza
+            scene blink
             hubby "Nairda?"
             scene pizza
             show nun n at right
@@ -747,11 +751,11 @@ label funeral:
     show snun happy at left
     nun "He's truely crushed by Mrs Beaks death he... eats his feelings is all..."
     "(Nairda hopes that is enough to stop the judgemental stares towards his husband, now seven deep into the tomato dishes)"
-    scene beaksmansion
+    scene beaksmansion2
     show nun n at right
     show beaks n at left
     "(Mr Beaks comes in, looks around, and starts to dab his eyes with a clean pocket square)"
-    scene beaksmansion
+    scene beaksmansion2
     show nun sad at right
     show beaks n at left
     nun "Mr Beaks, I'm so sorry for your loss."
@@ -786,59 +790,59 @@ label funeral:
     "(Strudle comes back to Nairda, plate filled with the most fanciful of buffet treats)"
     scene beaksmansion
     show nun sad at right
-    show beaks n at left
+    show snun n at left
     hubby "Are you ok? You look like you've seen a ghost."
     "(The damp, almost greasy handprints of Beaks still lingers on Nairda's hands)"
     nun "He did a two hander... BOTH hands, wrapped around BOTH of my hands!"
     nun "And he was... moist?!? Like all of his sweat is released out of his flipper fins!"
     scene beaksmansion
     show nun n at right
-    show beaks n at left
+    show snun n at left
     "(Nairda turns left and right to find any direction that'll possibly have a sink to wash them)"
     "(Hands still frozen in place mid-air as if moving them will dirty them up more)"
     scene beaksmansion
     show nun confused at right
-    show beaks n at left
+    show snun n at left
     nun "I'm going to the bathroom, there has to be one upstairs!"
     nun "Cover for me... I need to clean this off..."
     "(Strudle nods acceptingly, mouth full of several types of tomatoes and squares of cheese"
     scene beaksmansion
     show nun n at right
-    show beaks shy at left
+    show snun shy at left
     hubby "Uh-hum... can do... uhm... go clean"
 
 # Hand clean bathroom / wife stuff in boxes
-    scene beaksmansion
+    scene packed
     "(Heading upstairs, Nairda goes into the master bedroom after noticing it has an En Suite)"
     "(Boxes packed with Mrs Beaks' stuff is piled into the corner)"
     "(Completely erasing her memory from every part of the bedroom)"
-    scene beaksmansion
+    scene packed
     show nun confused
     nun "This is the polar opposite to downstairs..."
     "(Nairda whispers to himself, whiles going into the En suite to wash his hands)"
-    scene beaksmansion
+    scene bathroom
     show nun happy
     "(The water feels fantastic, and Beaks even buys the fancy antibacterial soap)"
     "(Nairda is lost in thought whiles thoroughly cleaning his hands and wrists to a godly level)"
-    scene beaksmansion
+    scene bathroom
     show nun confused at right
     show beaks angry at left
     beaks "What are you doing in here?"
     nun "AH!"
     beaks "The guest bathrooms are downstairs..."
-    scene beaksmansion
+    scene bathroom
     show nun sad at right
     show beaks angry at left
     nun "Mr Beaks! I'm sorry, I was looking for a bathroom and thought it'd be logical for one to be upstairs"
     beaks "Well, the guest bathrooms are downstairs so let me show you to those..."
     "(Beaks gestures to the bedroom doorway, waiting for Nairda to follow)"
     nun "Of course, thank you."
-    scene beaksmansion
+    scene packed
     show nun confused at right
     show beaks angry at left
     "(Nairda stops in the bedroom and looks at the boxes of Mrs Beaks' items again)"
     nun "Why did you pack up all of her stuff?"
-    scene beaksmansion
+    scene packed
     show nun confused at right
     show beaks n at left
     beaks "Well you know, after a death it's best to get rid of their stuff so you can have a fresh start"
@@ -846,12 +850,12 @@ label funeral:
     "(Nairda looks up confused)"
     nun "But it's memories? I haven't even moved my detective partner's stuff out of the office and he passed over a year ago"
     "(Beaks looks back at Nairda)"
-    scene beaksmansion
+    scene packed
     show nun confused at right
     show beaks angry at left
     beaks "I guess people mourn in different ways. Let me show you to the bathrooms downstairs."
     nun "Ah, yes. Of course. My apologies!"
-    scene beaksmansion
+    scene packed
     show nun n at right
     show beaks n at left
     "(The two of them head downstairs and Beaks leads Nairda to not one but two separate bathrooms on the ground floor)"
@@ -1080,6 +1084,10 @@ label mistress:
     olive "Just a second!"
     "(The door opens and a frail rabbit peeking around the corner of the door)"
     "(She looks relieved that you were frogs, like she was expecting something else)"
+    scene apartmentlongshot
+    show olive n at left
+    show nun n at right
+    show snun n
     olive "I'm not interested in buying anything, I'm sorry..."
     nun "Ah! No! We're, well I'm a detective, this is my partner Strudle. He's like my assistant!"
     "(She looks at Strudle and nods knowingly)"
@@ -1087,6 +1095,10 @@ label mistress:
     nun "I was wondering if we could ask you about someone in particular, regarding an open investigation?"
     "(Visibly shakey, as if she already knows who you're talking about, she ushers Nairda and Strudle to come inside quietly)"
     "(then closes and locks the door behind everyone)"
+    scene oliveapartment
+    show olive n at left
+    show nun n at right
+    show snun n
     olive "Oh dear..."
     hubby "Are you alright?"
     olive "Oh dear oh dear..."
@@ -1408,8 +1420,8 @@ label truthnotsolved_end:
     "(*cough* anything over 25...)"
     "(He'll have her killed, and remarry his newest mistress)"
     "(Rinse and repeat.)"
-    "(Rinse and repeat.)"
-    "(Rinse and repeat.)"
+    "(Rinse and repeat..)"
+    "(Rinse and repeat...)"
     return
 
 
@@ -1541,8 +1553,8 @@ label lienotsolved_end:
     "(*cough* anything over 25...)"
     "(He'll have her killed, and remarry his newest mistress)"
     "(Rinse and repeat.)"
-    "(Rinse and repeat.)"
-    "(Rinse and repeat.)"
+    "(Rinse and repeat..)"
+    "(Rinse and repeat...)"
     "(For you personally, seeing 'the hands' and the sudden flashes in your mind of actually being inside of giant plastic doll houses is
     terribly unnerving and out of your control, but you'll probably get used to it eventually...)"
     "(Probably...)"

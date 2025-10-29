@@ -1,4 +1,6 @@
 # Notes on different little bits I'd forget otherwise
+# 1920 x 1080
+# phone images should be set to 1300 x (auto) on krita to fit screen normally
 
 # Non-skipable cutscene
 #    play movie "examplemovie2.webm" noloop
@@ -39,10 +41,17 @@
 # beaksmansion (funeral buffet)
 # https://www.pexels.com/photo/exquisite-buffet-spread-in-rustic-indoor-setting-34357891/
 
+# packed items in bedroom
+# https://www.pexels.com/photo/suitcases-and-packed-boxes-placed-on-bed-in-light-room-4246096/
+
+# bathroom
+# https://www.pexels.com/photo/oval-mirror-near-toilet-bowl-1910472/
+
 # fancy street
 # https://www.pexels.com/photo/a-red-ferrari-car-parked-on-the-street-in-front-of-the-hotel-10273208/
 
-
+# olive apartment
+# https://www.pexels.com/photo/empty-coke-bottles-left-on-table-after-party-8885022/
 
 
 # SOUND REFERENCES
