@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("NNC1")
+define config.name = _("Nairda Nun: Chapter 01")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -29,7 +29,13 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""Nardia Nun Chapter 01 (Halloween Episode), made for LGBTQ+ Horror Jam 2025! (https://itch.io/jam/lgbtq-horror-jam-2025)
+
+The horror aspect of the game story was inspired by the Buffy The Vampire Slayer Episode called 'Normal Again' (E17, S06).
+
+There are four endings to get, to be honest there is no real good good ending... it's up to interpretation really, lol?
+
+All references to images and sounds are in the gamedevsnippets.rpy file.
 """)
 
 

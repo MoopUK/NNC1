@@ -1,36 +1,16 @@
-# Notes on different little bits I'd forget otherwise
-# 1920 x 1080
-# phone images should be set to 1300 x (auto) on krita to fit screen normally
+# My references for all royalty free pictures I did not take or draw, and all sound and back ground music below
 
-# Non-skipable cutscene
-#    play movie "examplemovie2.webm" noloop
-# Skipable cutscene
-#    show example movie
-#    nun "Any notes here show on top of the movie which loops indefinately until past these
-#    words and it's hidden"
-#    hide example
+# Some pictures are edited (example "pizza" was edited by me to say "Peckish" on the pizza shop sign as that's the name of the pizza place in
+# the game / etc. This is links to all origional pics below
 
-# Movie / Cutscenes (where needed) currently not being used
-# image officevideo1 movie = Movie(play="officevideo1.webm")
-# init:
-#    image movie = Movie(size=(1280, 720), xalign=0.5, yalign=0.5)
-
-# Defaulting player as answering correctly in the investigation to 0,
-# Find all the clues to win the case
-# default correct = 0
-# How to put yes or no answer into game:
-#            $ correct = correct +1  #GOOD choice!
-#            play sound "audio/yes.mp3"
-
-#            $ correct = correct -1  #BAD choice!
-#            play sound "audio/no.mp3"
-
-# Hand testers
-#    show hand r
-#    show tester hand
-
-
+#______________________________________________________________________________
 # PHOTO REFERENCES
+# All images not taken by me referenced here
+#______________________________________________________________________________
+
+# ITCH IO Background images:  Neeka - Academia pack lite
+# https://neeka.itch.io/academia-background-pack-lite
+
 # Hospital
 # https://www.pexels.com/photo/a-building-entrance-with-steps-near-road-9138682/
 
@@ -64,7 +44,11 @@
 # Wedding
 # https://www.pexels.com/photo/wedding-preparation-313707/
 
+
+#______________________________________________________________________________
 # SOUND REFERENCES
+# Dominantly royalty free samples on freesound.org
+#______________________________________________________________________________
 # hailstorm
 # https://freesound.org/people/Sadiquecat/sounds/730271/
 
@@ -99,3 +83,21 @@
 # Attribution:
 # Storm Rain Pulsation Fantasy Sci-fi Alien Anotherworld Soundscape Ambiance Mixdown 1.wav by szegvari
 # https://freesound.org/s/532228/ -- License: Creative Commons 0
+#_______________________________________________________________________________
+
+# Notes on different little bits I'd forget otherwise, it's cluttered, sorry!
+# 1920 x 1080
+# phone images should be set to 1300 x (auto) on krita to fit screen normally
+
+# Non-skipable cutscene
+#    play movie "example.webm" noloop
+# Skipable cutscene
+#    show example movie
+#    nun "Any notes here will show on top of the movie which loops indefinately until you pass these
+#    words and it's hidden"
+#    hide example
+
+# Movie / Cutscenes
+# image example movie = Movie(play="example.webm")
+# init:
+#    image movie = Movie(size=(1280, 720), xalign=0.5, yalign=0.5)
