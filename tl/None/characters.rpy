@@ -33,16 +33,13 @@ define hubby = Character("Strudle", color="#FF0000")#Red
 define fry = Character("Fry", color="#DBA87F") #Pizza crust colour
 
 # Apartment neighbours
-define t = Character("Tony", color="#FF0000")#Red
-define e = Character("Ezekiel", color="#FFE4E1")#MistRose
+define tony = Character("Tony", color="#FF0000")#Red
 
 # Misc characters
 define d = Character("Detective Harry Hare", color="#FFCC33")#yellow # Angry police detective
 define mor = Character("Mortician", color="#800000")#maroon # Mortician
-define r = Character("Receptionist", color="AABBCC") # Psychologist's receptionist and wife
 define drk = Character("Dr Krieger", color="FFCCAA") # Psychologist
 define chief = Character("Chief", color="135DD8") # Police blue, chief of police
-define np = Character("Nun's Partner", color="#99C55E") # Late Police Detective Partner of Nun
 
 # images for characters and facial expressions
 # General expressions:
@@ -81,65 +78,102 @@ image nun confused:
 image nun shy:
     "nunshy"
     zoom 0.5
+# EXTRA HANDS
+image nun hand1:
+    "nunhand40percent"
+
+# Olivia
+image olive n:
+    "oliven"
+    zoom 0.5
+image olive sad:
+    "olivesad"
+    zoom 0.5
+image olive happy:
+    "olivehappy"
+    zoom 0.5
+image olive angry:
+    "oliveangry"
+    zoom 0.5
+image olive confused:
+    "oliveconfused"
+    zoom 0.5
+image olive shy:
+    "oliveshy"
+    zoom 0.5
+
 # Beaks (man with missing wife)
 image beaks n:
     "beaks"
     zoom 0.5
+image beaks truesad:
+    "beakstruesad "
+    zoom 0.5
 image beaks sad:
-    "placeholder"
+    "beakssad "
     zoom 0.5
 image beaks happy:
-    "placeholder"
+    "beakshappy"
     zoom 0.5
 image beaks angry:
-    "placeholder"
+    "beaksangry"
     zoom 0.5
 image beaks confused:
-    "placeholder"
+    "beaksconfused"
     zoom 0.5
 image beaks shy:
-    "placeholder"
+    "beaksshy"
     zoom 0.5
 
 # Molly Stone (psychic)
 image molly n:
-    "placeholder"
+    "mollyn"
     zoom 0.5
 image molly sad:
-    "placeholder"
+    "mollysad"
     zoom 0.5
 image molly happy:
-    "placeholder"
+    "mollystone"
     zoom 0.5
 image molly angry:
-    "placeholder"
+    "mollyangry"
     zoom 0.5
 image molly confused:
-    "placeholder"
+    "mollyconfused"
     zoom 0.5
 image molly shy:
-    "placeholder"
+    "mollyshy"
+    zoom 0.5
+
+# Institute Nurse (only need neutral face)
+image nurse n:
+    "nursen"
     zoom 0.5
 
 # Strudle Nun (Nairda's husband)
 image snun n:
     "snunneutral"
-    zoom 0.2
+    zoom 0.5
 image snun sad:
     "snunsad"
-    zoom 0.2
+    zoom 0.5
 image snun happy:
     "snunhappy"
-    zoom 0.2
+    zoom 0.5
 image snun angry:
     "snunangry"
-    zoom 0.2
+    zoom 0.5
 image snun confused:
     "snunconfused"
-    zoom 0.2
+    zoom 0.5
 image snun shy:
     "snunshy"
-    zoom 0.2
+    zoom 0.5
+
+# EXTRA HANDS
+image snun hand1:
+    "snunhandtest"
+    zoom 0.8
 
 # Dr Krieger (Therapist)
 image drk n:
@@ -159,26 +193,6 @@ image drk confused:
     zoom 0.5
 image drk shy:
     "drkshy"
-    zoom 0.5
-
-# Therapy Receptionist
-image rec n:
-    "receptionistn"
-    zoom 0.5
-image rec sad:
-    "receptionistsad"
-    zoom 0.5
-image rec happy:
-    "receptionisthappy"
-    zoom 0.5
-image rec angry:
-    "receptionistangry"
-    zoom 0.5
-image rec confused:
-    "receptionistconfused"
-    zoom 0.5
-image rec shy:
-    "receptionistshy"
     zoom 0.5
 
 # Tony (apartment neighbour)
@@ -201,26 +215,6 @@ image tony shy:
     "tonyshy"
     zoom 0.5
 
-# Ezekiel (Tony's nemesis and vice versa at apartments) PLACEHOLDERS REPLACEMENTS NEEDED
-image ez n:
-    "tonyneutral"
-    zoom 0.5
-image ez sad:
-    "nunsad"
-    zoom 0.5
-image ez happy:
-    "nunhappy"
-    zoom 0.5
-image ez angry:
-    "nunangry"
-    zoom 0.5
-image ez confused:
-    "nunneutral"
-    zoom 0.5
-image ez shy:
-    "nunshy"
-    zoom 0.5
-
 # Dr Wolfe (Mortician)
 image drwolfe n:
     "drwolfeneutral"
@@ -241,24 +235,24 @@ image drwolfe shy:
     "drwolfeshy"
     zoom 0.5
 
-# Chief (Police chief) placeholder, might be entirely unneeded, might not show chief
+# Chief (Police chief)
 image chief n:
-    "placeholder"
+    "chiefn"
     zoom 0.5
 image chief sad:
-    "placeholder"
+    "chiefsad"
     zoom 0.5
 image chief happy:
-    "placeholder"
+    "chiefhappy"
     zoom 0.5
 image chief angry:
-    "placeholder"
+    "chiefangry"
     zoom 0.5
 image chief confused:
-    "placeholder"
+    "chiefconfused"
     zoom 0.5
 image chief shy:
-    "placeholder"
+    "chiefshy"
     zoom 0.5
 
 # Harry Hare (arrogant police detective)
@@ -302,22 +296,16 @@ image fry shy:
     zoom 0.5
 
 # MISC ITEMS - All game scenes are in 1280 x 720, resize accordingly
-image gun gun:
-    "gun"
-    zoom 0.5
-
-image opencab opencab:
-    "opencabinet"
-    zoom 0.5
-
 image boot boot:
     "boot"
     zoom 0.5
+image news news:
+    "news"
+    zoom 0.7
 
-image doorlock doorlock:
-    "doorlock"
-    zoom 0.65
-
-image mace mace:
-    "mace"
-    zoom 0.6
+image stalking1:
+    "stalking1"
+    zoom 0.7
+image stalking2:
+    "stalking2"
+    zoom 0.7

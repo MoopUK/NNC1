@@ -1,4 +1,6 @@
 # Notes on different little bits I'd forget otherwise
+# 1920 x 1080
+# phone images should be set to 1300 x (auto) on krita to fit screen normally
 
 # Non-skipable cutscene
 #    play movie "examplemovie2.webm" noloop
@@ -7,6 +9,11 @@
 #    nun "Any notes here show on top of the movie which loops indefinately until past these
 #    words and it's hidden"
 #    hide example
+
+# Movie / Cutscenes (where needed) currently not being used
+# image officevideo1 movie = Movie(play="officevideo1.webm")
+# init:
+#    image movie = Movie(size=(1280, 720), xalign=0.5, yalign=0.5)
 
 # Defaulting player as answering correctly in the investigation to 0,
 # Find all the clues to win the case
@@ -25,7 +32,7 @@
 
 # PHOTO REFERENCES
 # Hospital
-# https://www.pexels.com/photo/hospital-beside-vehicle-park-and-road-at-night-1692693/
+# https://www.pexels.com/photo/a-building-entrance-with-steps-near-road-9138682/
 
 # Pizza shop
 # https://www.pexels.com/photo/a-city-road-at-night-10046158/
@@ -39,8 +46,23 @@
 # beaksmansion (funeral buffet)
 # https://www.pexels.com/photo/exquisite-buffet-spread-in-rustic-indoor-setting-34357891/
 
+# packed items in bedroom
+# https://www.pexels.com/photo/suitcases-and-packed-boxes-placed-on-bed-in-light-room-4246096/
 
+# bathroom
+# https://www.pexels.com/photo/oval-mirror-near-toilet-bowl-1910472/
 
+# fancy street
+# https://www.pexels.com/photo/a-red-ferrari-car-parked-on-the-street-in-front-of-the-hotel-10273208/
+
+# olive apartment
+# https://www.pexels.com/photo/empty-coke-bottles-left-on-table-after-party-8885022/
+
+# scary house with Olivia body bad end
+# https://www.pexels.com/photo/abandoned-18th-century-church-in-spring-landscape-31146793/
+
+# Wedding
+# https://www.pexels.com/photo/wedding-preparation-313707/
 
 # SOUND REFERENCES
 # hailstorm
