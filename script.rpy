@@ -1560,7 +1560,7 @@ label truthsolved_end:
     "(Beaks doesn't even realise what he's saying before the Chief remembers other details)"
     chief "Third...? That's right! You're last wife, Baabara the sheep? She went missing when she was only 25 years old!"
     chief "We never found the body... it was a cold case..."
-    show hare n ar right
+    show hare n at right
     d "I thought his last wife was that actress? Betty Le Coo? That chick had legs for DAYS! What ever happened to her?"
     scene deadolive
     show snun sad at left
@@ -1592,7 +1592,7 @@ label truthsolved_end:
     "(Olivia opens one eye slightly and whispers whiles still as still as the grave)"
     olive "Are his lackies still here?"
     scene morning4
-    show nun happy ar right
+    show nun happy at right
     show olive happy at left
     nun "No no, it's just me, Strudle, and Molly Stone"
     olive "Thank the gods... My ears are killing me!"
@@ -1760,7 +1760,7 @@ label liesolved_end:
     "(Beaks doesn't even realise what he's saying before the Chief remembers other details)"
     chief "Third...? That's right! You're last wife, Baabara the sheep? She went missing when she was only 25 years old!"
     chief "We never found the body... it was a cold case..."
-    show hare n ar right
+    show hare n at right
     d "I thought his last wife was that actress? Betty Le Coo? That chick had legs for DAYS! What ever happened to her?"
     scene deadolive
     show snun sad at left
@@ -1774,6 +1774,7 @@ label liesolved_end:
     beaks "Well you see... I have very bad luck and... If you'd let me I can show you everything you need to know back in my house"
     "(Beaks starts to waddle slowly backwards towards his mansion)"
     show beaks truesad
+    show nun angry at right
     nun "STOP RIGHT THERE!"
     scene deadolive
     "(Beaks flings around and makes a run for it...)"
@@ -1792,7 +1793,7 @@ label liesolved_end:
     "(Olivia opens one eye slightly and whispers whiles still as still as the grave)"
     olive "Are his lackies still here?"
     scene morning4
-    show nun happy ar right
+    show nun happy at right
     show olive happy at left
     nun "No no, it's just me, Strudle, and Molly Stone"
     olive "Thank the gods... My ears are killing me!"
