@@ -106,20 +106,23 @@ image olive shy:
 image beaks n:
     "beaks"
     zoom 0.5
+image beaks truesad:
+    "beakstruesad "
+    zoom 0.5
 image beaks sad:
-    "beaks"
+    "beakssad "
     zoom 0.5
 image beaks happy:
-    "beaks"
+    "beakshappy"
     zoom 0.5
 image beaks angry:
-    "beaks"
+    "beaksangry"
     zoom 0.5
 image beaks confused:
-    "beaks"
+    "beaksconfused"
     zoom 0.5
 image beaks shy:
-    "beaks"
+    "beaksshy"
     zoom 0.5
 
 # Molly Stone (psychic)
@@ -150,22 +153,22 @@ image nurse n:
 # Strudle Nun (Nairda's husband)
 image snun n:
     "snunneutral"
-    zoom 0.2
+    zoom 0.5
 image snun sad:
     "snunsad"
-    zoom 0.2
+    zoom 0.5
 image snun happy:
     "snunhappy"
-    zoom 0.2
+    zoom 0.5
 image snun angry:
     "snunangry"
-    zoom 0.2
+    zoom 0.5
 image snun confused:
     "snunconfused"
-    zoom 0.2
+    zoom 0.5
 image snun shy:
     "snunshy"
-    zoom 0.2
+    zoom 0.5
 
 # EXTRA HANDS
 image snun hand1:
@@ -296,3 +299,13 @@ image fry shy:
 image boot boot:
     "boot"
     zoom 0.5
+image news news:
+    "news"
+    zoom 0.7
+
+image stalking1:
+    "stalking1"
+    zoom 0.7
+image stalking2:
+    "stalking2"
+    zoom 0.7
