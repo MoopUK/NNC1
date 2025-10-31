@@ -343,6 +343,7 @@ label GameStart:
 # 1. Nun and Strudle make way to the institution, discussing Molly Stone's general background as
 # a phychic. Strudle has to wait in the car whiles Nairda goes in.
     scene hospital
+    play music "audio/sewer.mp3"
     "(The institution: A small brown building, with gold patterns painted meticulously on the roof)"
     "(If you didn't have claustrophobia before, you most certainly do now.)"
     scene hospital
@@ -497,6 +498,7 @@ label GameStart:
 # 6. His vision goes to black and he's suddenly back to the car.
     scene blink
     "(Nairda's vision turns to black)"
+    play music "audio/cafe.mp3"
     scene stairs
     show nun n at right
     show snun n at left
@@ -645,10 +647,8 @@ label pizzatime:
 
         "The pizza looked like it was made of clay for a minute, like the entire scene was a giant children's doll house":
             scene pizza
-#            show nun confused at right
+            play music "audio/sewer.mp3"
             show nun hand1 at left
-#            show snun sad
-#            show fry confused at left
             $ truth = truth +1  #Truth choice!
             play sound "audio/yes.mp3"
             "(Suddenly you are unable to move)"
@@ -671,6 +671,7 @@ label pizzatime:
             scene pizzahand8
             "(FEEL)"
             scene blink
+            play music "audio/cafe.mp3"
             hubby "Nairda?"
             scene pizza
             show nun n at right
@@ -936,8 +937,6 @@ label funeral:
     show snun n at left
     hubby "Can we just go before he sees us snooping?"
     nun "Yeah... we should go..."
-
-    # CHANGE TO ROADS AND FANCY HOUSES
 
     scene fancystreet
     "(The drive home is rather long, the Beaks Mansion is so deep into the richest part of town that you get an
@@ -1485,6 +1484,7 @@ label helpher:
 # SCENE 09 - Back to the institute
 # - get Molly to agree to pretending to be psychic and finding Molly's body in a similar place as Beaks' wife
     scene hospital
+    play music "audio/sewer.mp3"
     "(The Institute: A small brown building, with gold patterns painted meticulously on the roof)"
     "(If you didn't have claustrophobia before, you most certainly do now.)"
     "(Nobody wants to be in the institution.)"
@@ -1532,6 +1532,7 @@ label truthsolved_end:
     # The hands slowly disappear from existance
     # solved same way as other
     # "truth solved"
+    play music "audio/cafe.mp3"
     scene morning4
     "(A few days have passed)"
     scene morning4
@@ -1639,6 +1640,7 @@ label truthsolved_end:
 
     # Ending line
     scene screenstart
+    stop music
     "(The End)"
     "(ENDING 1 of 4: You told the truth about seeing things and got help. You will no longer see the reality of the situation you are in.
     That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
@@ -1658,6 +1660,7 @@ label truthnotsolved_end:
     # Nairda tells the truth about seeing things, and the therapist helps with medication
     # The hands slowly disappear from existance
     scene emptygym
+    play music "audio/cafe.mp3"
     "(Nairda tells his therapist all about 'the hands' and his flashes of the world looking plastic and full of giant doll house furniture)"
     show drk happy at left
     show nun sad at right
@@ -1694,10 +1697,11 @@ label truthnotsolved_end:
     # Beaks has a new wife, younger bird of some description
     # A woman went missing recently from her apartment, a rabbit called Olivia
     scene scaryhouse
+    play music "audio/stormrain.mp3" volume 0.25
     "(6 months later:)"
     "(The news shows the story of a missing person's case, a rabbit called Olivia from down town)"
     scene stalkerimages
-    "(After being stalked by an ex lover with ominous messages, she was declared missing after her landlord hadn't heard from her in over a month)"
+    "(Stalked by an ex lover with ominous messages, she was declared missing after her landlord hadn't heard from her in over a month)"
     scene stalking3
     "(Today her body was found, with several botched plastic surgeries...)"
     scene ears
@@ -1717,6 +1721,7 @@ label truthnotsolved_end:
 
 # Ending line
     scene screenstart
+    stop music
     "(The End)"
     "(ENDING 2 of 4: You told the truth about seeing things and got help. You will no longer see the reality of the situation you are in.
     That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
@@ -1732,6 +1737,7 @@ label truthnotsolved_end:
 
 label liesolved_end:
     # lie solved
+    play music "audio/cafe.mp3"
     scene morning4
     "(A few days have passed)"
     scene morning4
@@ -1837,6 +1843,7 @@ label liesolved_end:
 
     # Ending line
     scene screenstart
+    stop music
     "(The End)"
     "(ENDING 3 of 4: You lied about seeing things and didn't get help. Now you will forever see the reality of the situation you are in.
     That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"
@@ -1890,10 +1897,11 @@ label lienotsolved_end:
     # Beaks has a new wife, younger bird of some description
     # A woman went missing recently from her apartment, a rabbit called Olivia
     scene scaryhouse
+    play music "audio/stormrain.mp3" volume 0.25
     "(6 months later:)"
     "(The news shows the story of a missing person's case, a rabbit called Olivia from down town)"
     scene stalkerimages
-    "(After being stalked by an ex lover with ominous messages, she was declared missing after her landlord hadn't heard from her in over a month)"
+    "(Stalked by an ex lover with ominous messages, she was declared missing after her landlord hadn't heard from her in over a month)"
     scene stalking3
     "(Today her body was found, with several botched plastic surgeries...)"
     scene ears
@@ -1912,6 +1920,7 @@ label lienotsolved_end:
 
 # Ending line
     scene screenstart
+    stop music
     "(The End)"
     "(ENDING 4 of 4: You lied about seeing things and didn't get help. Now you will forever see the reality of the situation you are in.
     That you, and everyone you have ever loved, are toys being played with by an indie games dev a little too into crime TV shows.)"

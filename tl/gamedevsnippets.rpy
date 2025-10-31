@@ -11,19 +11,19 @@
 # ITCH IO Background images:  Neeka - Academia pack lite
 # https://neeka.itch.io/academia-background-pack-lite
 
-# Hospital
+# Hospital - edited out the symbols and name for institution use
 # https://www.pexels.com/photo/a-building-entrance-with-steps-near-road-9138682/
 
-# Pizza shop
+# Pizza shop - edited it to say "Peckish" as that's the name of the shop in game
 # https://www.pexels.com/photo/a-city-road-at-night-10046158/
 
-# Veggie Pizza
+# Veggie Pizza - edited into my clay pizza photo
 # https://www.pexels.com/photo/veggie-pizza-on-brown-wooden-tray-5640013/
 
 # funeral
 # https://www.pexels.com/photo/serene-autumn-cemetery-with-lantern-lit-graves-34351053/
 
-# beaksmansion (funeral buffet)
+# beaksmansion (funeral buffet) used twice - normal and one with Strudle edited into it like he's getting food
 # https://www.pexels.com/photo/exquisite-buffet-spread-in-rustic-indoor-setting-34357891/
 
 # packed items in bedroom
@@ -32,16 +32,16 @@
 # bathroom
 # https://www.pexels.com/photo/oval-mirror-near-toilet-bowl-1910472/
 
-# fancy street
+# fancy street - mild edit of humans to look more animal like
 # https://www.pexels.com/photo/a-red-ferrari-car-parked-on-the-street-in-front-of-the-hotel-10273208/
 
 # olive apartment
 # https://www.pexels.com/photo/empty-coke-bottles-left-on-table-after-party-8885022/
 
-# scary house with Olivia body bad end
+# scary house - added in Olivia's body from bad endings
 # https://www.pexels.com/photo/abandoned-18th-century-church-in-spring-landscape-31146793/
 
-# Wedding
+# Wedding - edited out the brand name in shoes
 # https://www.pexels.com/photo/wedding-preparation-313707/
 
 
@@ -63,17 +63,9 @@
 # Camera shutter
 # https://freesound.org/people/mrrap4food/sounds/619062/
 
-# Eeriewind
-# Attribution:
-# Ambiance-Eerie_Wind-001.wav by DWOBoyle -- https://freesound.org/s/147303/ -- License: Attribution 4.0
-
 # Scream1
 # Attribution:
 # scream.wav by marionagm90 -- https://freesound.org/s/220653/ -- License: Attribution 3.0
-
-# scream2
-# Attribution:
-# Scream- woman- pain 2 by Valerie-Vivegnis -- https://freesound.org/s/767888/ -- License: Attribution 4.0
 
 # Sewer
 # Attribution:
